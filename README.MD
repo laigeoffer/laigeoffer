@@ -18,7 +18,7 @@
 
 <br/>
 <p align="center" style="color: #999;">
-  赞助商d2组织
+  赞助商d2组织2
 </p>
 <p align="center">
 <!-- <a href="http://apifox.cn/a103xugaoyi" target="_blank"><img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/blog-gitalk-comment@master/img/Apifox-860x320.ic7tz1417sw.png" alt="赞助商" style="width: 400px;border-radius: 2px;"></a> -->
