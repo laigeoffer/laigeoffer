@@ -95,7 +95,28 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       //     { text: '友情链接', link: '/friends/' },
       //   ],
       // },
-      { text: '在线体验', link: '/pages/464479/' },
+      {
+        text: '在线体验',
+        link: '/online-test/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        items: [
+          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+          {
+            text: '校招实战项目',
+            link: '/campus/',
+            items: [
+              { text: 'PmHub（智能项目管理平台）', link: 'https://pmhub.laigeoffer.cn' },
+            ],
+          },
+          {
+            text: '社招实战项目',
+            link: '/society/',
+            items: [
+              { text: 'AutoCodeFlow（自动编码系统）', link: 'https://pmhub.laigeoffer.cn' },
+              { text: 'AIWorkFlow（AI流程管控系统）', link: 'https://pmhub.laigeoffer.cn' }
+            ],
+          },
+        ],
+      },
       {
         text: '加入学习群',
         link: '/pages/18f4af/',
@@ -108,11 +129,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         text: '🌈知识星球',
         link: '/archives/',
-        items: [
-          { text: '分类', link: '/pages/d23001/' },
-          // { text: '标签', link: '/tags/' },
-          // { text: '归档', link: '/archives/' },
-        ],
+        // items: [
+        //   { text: '分类', link: '/pages/d23001/' },
+        //   // { text: '标签', link: '/tags/' },
+        //   // { text: '归档', link: '/archives/' },
+        // ],
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
