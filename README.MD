@@ -33,19 +33,28 @@
 
 2024 年，联合苍何创建“[来个 offer](https://laigeoffer.cn/)”组织，旨在帮助更多的同学拿到更好的 offer，PmHub 是我们推出的第二个实战项目，相信一定能够再创佳绩。
 
-合伙人苍何，原创公众号“苍何”的作者，前阿里 P7，曾任蚂蚁金服技术专家，在微服务分布式方面有着丰富的经验。
+合伙人苍何，原创公众号“苍何”的作者，前大厂高级开发，如今是公司技术 leader，曾在支付宝、科大讯飞等大厂工作过，在微服务分布式方面有着丰富的经验。
+
+苍何本身是土木转码，从土木到外包再到大厂最后到技术 leader，有着丰富的职场经验，曾同时拿到过京东、腾讯、阿里、字节等大厂的offer。
+
+![苍何的荣誉证书](https://cdn.tobebetterjavaer.com/stutymore/%E4%B8%AA%E4%BA%BA%E8%AF%81%E4%B9%A6.jpg)
+
+
 
 ## :sparkling_heart:支持这个项目
 
 如果你正在使用这个项目并感觉良好，或只是想要支持我们继续开发，你可以通过如下*任意* 方式支持我：
 
 1. *Star* 并 分享这个项目 :rocket: 
-2. 关注公众号`苍何`，回复`xxx`，可获取 [xxx学习资源](https://github.com/xugaoyi/blog-gitalk-comment/wiki/Front-end-Study)
-3. 谢谢！:heart:
+2. 关注公众号`苍何`，回复`666`，可获取 [2000G 学习资源](https://laigeoffer.cn/)
 
-<img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200523131533.jpg" alt="微信搜索苍何" width=150>
+![](https://cdn.tobebetterjavaer.com/stutymore/%E6%8B%BF%E4%B8%AAoffer%E5%85%B3%E6%B3%A8.jpg)
 
-二维码没有正常显示？点 [这里😎](https://doc.xugaoyi.com/pages/1b12ed/)
+1. 谢谢！:heart:
+
+<img src="https://cdn.tobebetterjavaer.com/stutymore/%E8%B5%9E%E8%B5%8F%E7%A0%812.jpg" alt="微信搜索苍何" width=150>
+
+二维码没有正常显示？点 [这里😎](https://laigeoffer.cn/)
 
 ## 致谢
 
@@ -59,12 +68,12 @@
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <img src="https://mmbiz.qpic.cn/sz_mmbiz_jpg/SaV6d0YfaAS0naAeQWibGVkSt6DxSaqGxdkJaeEqoJJ6M1NV1kq9aUqE3lGo7BuroTAoMg4rgibIIay1ibfvqXEiaA/0?wx_fmt=jpeg" class="no-zoom" style="width:120px;margin: 10px;">
+        <img src="https://cdn.tobebetterjavaer.com/stutymore/%E6%A0%87%E5%87%86.png" class="no-zoom" style="width:120px;margin: 10px;">
         <p>PmHub微信群(添加我微信备注"加群")</p>
       </td>
       <td align="center" valign="middle">
-        <img src="https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store@master/qq.3ugglfuuwz00.webp" alt="群号: 694387113" class="no-zoom" style="width:120px;margin: 10px;">
-        <p>PmHub QQ群: 694387113</p>
+        <img src="https://cdn.tobebetterjavaer.com/stutymore/qq-pmhub.jpg" class="no-zoom" style="width:120px;margin: 10px;">
+        <p>PmHub QQ群: 956565862</p>
       </td>
     </tr>
   </tbody>
