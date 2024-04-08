@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import baiduCode from './config/baiduCode' // 百度统计hm码
 import htmlModules from './config/htmlModules' // 自定义插入的html块
 
-const DOMAIN_NAME = 'blog.canghecode.com' // 域名 (不带https)
+const DOMAIN_NAME = 'laigeoffer.cn' // 域名 (不带https)
 const WEB_SITE = `https://${DOMAIN_NAME}` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "🚀来个offer-民间开源实战项目聚集地",
+      title: "🚀来个offer",
       description: '🚀来个 offer 民间开源实战项目聚集地，助力学生党和社招党拿到一个更好的 offer 💪🏻',
     }
   },
@@ -40,18 +40,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           { text: '博客搭建', link: '/pages/075740/' },
         ],
       },
-      // {
-      //   text: '',
-      //   link: '/project/',
-      //   items: [
-      //     { text: '学习', link: '/pages/f2a556/' },
-      //     { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-      //     { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-      //     { text: '实用技巧', link: '/pages/baaa02/' },
-      //     { text: '友情链接', link: '/friends/' },
-      //   ],
-      // },
-      
       {
         text: '🔥实战项目',
         link: '/project/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -74,27 +62,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
         ],
       },
-
-      // {
-      //   text: '页面',
-      //   link: '/ui/',
-      //   items: [
-      //     { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-      //     { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-      //   ],
-      // },
-
-      // {
-      //   text: '更多',
-      //   link: '/more/',
-      //   items: [
-      //     { text: '学习', link: '/pages/f2a556/' },
-      //     { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-      //     { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-      //     { text: '实用技巧', link: '/pages/baaa02/' },
-      //     { text: '友情链接', link: '/friends/' },
-      //   ],
-      // },
       {
         text: '在线体验',
         link: '/online-test/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -118,7 +85,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '加入学习群',
+        text: '🌈加入学习群',
         link: '/pages/18f4af/',
         // items: [
         //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
@@ -127,14 +94,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // ],
       },
       {
-        text: '🌈知识星球',
-        link: '/archives/',
-        // items: [
-        //   { text: '分类', link: '/pages/d23001/' },
-        //   // { text: '标签', link: '/tags/' },
-        //   // { text: '归档', link: '/archives/' },
-        // ],
+        text: '珍藏资源',
+        link: '/resource/',
+        items: [
+          { text: '⬇️PDF下载', link: '/pages/pdftotal/' },
+          { text: '🔓破解合集', link: '/pages/pojieheji/' },
+        ],
       },
+
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
@@ -162,7 +129,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
     // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
     // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
-    // titleBadge: false, // 文章标题前的图标是否显示，默认true
+    titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
@@ -229,7 +196,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     extendFrontmatter: {
       author: {
         name: '苍何',
-        link: 'https://github.com/laigeoffer'
+        link: 'https://github.com/freestylefly'
       }
     },
 

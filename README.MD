@@ -83,10 +83,10 @@
 
 ```bash
 # clone the project
-git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
+git clone https://github.com/laigeoffer/laigeoffer.git
 
 # enter the project directory
-cd vuepress-theme-vdoing
+cd laigeoffer
 
 # install dependency
 npm install # or yarn install

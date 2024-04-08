@@ -5,6 +5,8 @@
   助力学生党和工作党拿个更好的offer💪🏻
 </p>
 
+<!-- 小熊猫 -->
+<!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
 
 ## 🎯实战项目
 
@@ -83,10 +85,10 @@
 
 ```bash
 # clone the project
-git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
+git clone https://github.com/laigeoffer/laigeoffer.git
 
 # enter the project directory
-cd vuepress-theme-vdoing
+cd laigeoffer
 
 # install dependency
 npm install # or yarn install
