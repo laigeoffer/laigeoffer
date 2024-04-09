@@ -50,9 +50,10 @@
 1. *Star* 并 分享这个项目 :rocket: 
 2. 关注公众号`苍何`，回复`666`，可获取 [2000G 学习资源](https://laigeoffer.cn/)
 
-![](https://cdn.tobebetterjavaer.com/stutymore/%E6%8B%BF%E4%B8%AAoffer%E5%85%B3%E6%B3%A8.jpg)
+![来个offer-公众号-关注](https://cdn.tobebetterjavaer.com/stutymore/来个offer-公众号-关注.jpg)
 
-1. 谢谢！:heart:
+
+3. 谢谢！:heart:
 
 <img src="https://cdn.tobebetterjavaer.com/stutymore/%E8%B5%9E%E8%B5%8F%E7%A0%812.jpg" alt="微信搜索苍何" width=150>
 
