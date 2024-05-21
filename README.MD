@@ -1,3 +1,4 @@
+
 <p align="center"><a href="https://laigeoffer.cn/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.tobebetterjavaer.com/stutymore/README-20240330213040.png" alt="logo"></a></p>
 
 <h1 align="center">来个offer-开源实战项目</h1>
@@ -5,6 +6,8 @@
   助力学生党和工作党拿个更好的offer💪🏻
 </p>
 
+<!-- 小熊猫 -->
+<!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
 
 ## 🎯实战项目
 
@@ -50,7 +53,8 @@
 
 ![来个offer-公众号-关注](https://cdn.tobebetterjavaer.com/stutymore/来个offer-公众号-关注.jpg)
 
-1. 谢谢！:heart:
+
+3. 谢谢！:heart:
 
 <img src="https://cdn.tobebetterjavaer.com/stutymore/%E8%B5%9E%E8%B5%8F%E7%A0%812.jpg" alt="微信搜索苍何" width=150>
 
