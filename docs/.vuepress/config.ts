@@ -49,15 +49,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '校招实战项目',
             link: '/campus/',
             items: [
-              { text: 'PmHub（智能项目管理平台）', link: '/pmhub/laigeoffer/about/' },
+              { text: 'PmHub（智能项目管理平台）', link: '/laigeoffer/pmhub/about/' },
             ],
           },
           {
             text: '社招实战项目',
             link: '/society/',
             items: [
-              { text: 'AutoCodeFlow（自动编码系统）', link: '/pages/94fcd5//' },
-              { text: 'AIWorkFlow（AI流程管控系统）', link: '/pages/60c28e/' }
+              { text: 'AutoCodeFlow（自动编码系统）', link: '/laigeoffer/AutoCodeFlow/about/' }
             ],
           },
         ],
@@ -78,8 +77,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: '社招实战项目',
             link: '/society/',
             items: [
-              { text: 'AutoCodeFlow（自动编码系统）', link: 'https://pmhub.laigeoffer.cn' },
-              { text: 'AIWorkFlow（AI流程管控系统）', link: 'https://pmhub.laigeoffer.cn' }
+              { text: 'AutoCodeFlow（自动编码系统）', link: 'https://pmhub.laigeoffer.cn' }
             ],
           },
         ],
@@ -315,11 +313,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       {
         choosen: 'gitalk',
         options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
+          clientID: 'Ov23liFcwurG3aBQ8B6P',
+          clientSecret: 'a4f3907e1b42ec56a3e4260007314a3f87d2a9f4',
+          repo: 'laigeoffer', // GitHub 仓库
+          owner: 'laigeoffer', // GitHub仓库所有者
+          admin: ['freestylefly'], // 对仓库有写权限的人
           // distractionFreeMode: true,
           pagerDirection: 'last', // 'first'正序 | 'last'倒序
           id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
