@@ -1,9 +1,13 @@
-<p align="center"><a href="https://laigeoffer.cn/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.tobebetterjavaer.com/stutymore/README-20240330213040.png" alt="logo"></a></p>
-
-<h1 align="center">来个offer-开源实战项目</h1>
-<p align="center">
-  助力学生党和工作党拿个更好的offer💪🏻
-</p>
+---
+home: true
+heroImage: /img/web-laigeoffer.jpg
+heroText: 🚀来个offer-民间开源实战项目聚集地
+tagline: 助力学生党和社招党拿到一个更好的 offer 💪🏻
+postList: none
+sidebar: false
+article: false
+hideRightBar: true
+---
 
 <!-- 小熊猫 -->
 <!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->

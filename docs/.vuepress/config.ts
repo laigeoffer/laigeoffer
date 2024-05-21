@@ -34,10 +34,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '后端技术',
         link: '/technology/',
         items: [
-          { text: '技术文档', link: '/pages/a7f106/' },
-          { text: 'GitHub技巧', link: '/pages/c9e5e1/' },
-          { text: 'Nodejs', link: '/pages/d3388d/' },
-          { text: '博客搭建', link: '/pages/075740/' },
+          { text: '消息队列', link: '/pages/mq/' },
+          { text: '微服务', link: '/pages/weifuwu/' },
+          { text: '云原生', link: '/pages/yunyuansheng/' },
+          { text: '大模型&AIGC', link: '/pages/aigc/' },
         ],
       },
       {
@@ -108,7 +108,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     // docsBranch: 'master', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-    editLinks: true, // 启用编辑
+    editLinks: false, // 启用编辑
     editLinkText: '编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
@@ -118,7 +118,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // archive: false, // 是否打开归档功能，默认true
     // categoryText: '随笔', // 碎片化文章（_posts文件夹的文章）预设生成的分类值，默认'随笔'
 
-    // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
+    pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
     // bodyBgImg: [
     //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
@@ -308,26 +308,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'Ov23liFcwurG3aBQ8B6P',
-          clientSecret: 'a4f3907e1b42ec56a3e4260007314a3f87d2a9f4',
-          repo: 'laigeoffer', // GitHub 仓库
-          owner: 'laigeoffer', // GitHub仓库所有者
-          admin: ['freestylefly'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
-    ],
+    // [
+    //   'vuepress-plugin-comment', // 评论
+    //   {
+    //     choosen: 'gitalk',
+    //     options: {
+    //       clientID: 'Ov23liFcwurG3aBQ8B6P',
+    //       clientSecret: 'a4f3907e1b42ec56a3e4260007314a3f87d2a9f4',
+    //       repo: 'laigeoffer', // GitHub 仓库
+    //       owner: 'laigeoffer', // GitHub仓库所有者
+    //       admin: ['freestylefly'], // 对仓库有写权限的人
+    //       // distractionFreeMode: true,
+    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+    //       body:
+    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+    //     },
+    //   },
+    // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
