@@ -3,6 +3,7 @@ home: true
 heroImage: /img/web-laigeoffer.jpg
 heroText: 🚀来个offer-民间开源实战项目聚集地
 tagline: 助力学生党和社招党拿到一个更好的 offer 💪🏻
+object-fit: cover;"
 postList: none
 sidebar: false
 article: false

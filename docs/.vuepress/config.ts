@@ -84,7 +84,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '🌈加入学习群',
-        link: '/pages/18f4af/',
+        link: '/laigeoffer/studygroupabout/',
         // items: [
         //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
         //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
@@ -212,7 +212,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '🚀来个 offer 民间开源实战项目聚集地，助力学生党和社招党拿到一个更好的 offer 💪🏻,Java，JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
+    // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
     //   'script',
