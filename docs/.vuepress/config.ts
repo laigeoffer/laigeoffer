@@ -32,9 +32,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       
       {
         text: '后端技术',
-        link: '/technology/',
+        link: '/technology/mq/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
-          { text: '消息队列', link: '/pages/mq/' },
+          { text: '消息队列', link: '/technology/mq/' },
           { text: '微服务', link: '/pages/weifuwu/' },
           { text: '云原生', link: '/pages/yunyuansheng/' },
           { text: '大模型&AIGC', link: '/pages/aigc/' },
@@ -42,14 +42,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '🔥实战项目',
-        link: '/project/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/project/laigeoffer/pmhub/about/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
             text: '校招实战项目',
             link: '/campus/',
             items: [
-              { text: 'PmHub（智能项目管理平台）', link: '/laigeoffer/pmhub/about/' },
+              { text: 'PmHub（智能项目管理平台）', link: '/project/laigeoffer/pmhub/about/' },
             ],
           },
           {
@@ -63,12 +63,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '在线体验',
-        link: '/online-test/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        // link: '/online-test/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
             text: '校招实战项目',
-            link: '/campus/',
+            link: 'https://pmhub.laigeoffer.cn',
             items: [
               { text: 'PmHub（智能项目管理平台）', link: 'https://pmhub.laigeoffer.cn' },
             ],
@@ -93,9 +93,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '珍藏资源',
-        link: '/resource/',
+        // link: '/resource/',
         items: [
-          { text: '⬇️PDF下载', link: '/pages/pdftotal/' },
+          { text: '⬇️PDF下载', link: '/resource/pdftoc/' },
           { text: '🔓破解合集', link: '/pages/pojieheji/' },
         ],
       },
@@ -340,7 +340,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   markdown: {
     lineNumbers: true,
-    extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+    extractHeaders: ['h2'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
   // 监听文件变化并重新构建
