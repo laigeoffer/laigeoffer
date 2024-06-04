@@ -16,6 +16,45 @@ hideRightBar: true
 <!-- 小熊猫 -->
 <!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
 
+<div class="columns">
+  <div class="column">
+    <h3>热门技术</h3>
+    <p>采用时下企业最新的热门技术框架，如 SpringCloud-Gateway、Nacos、Sentinel等，主打一个硬核，不与真实企业项目脱节。</p>
+  </div>
+
+  <div class="column">
+    <h3>单体与微服务</h3>
+    <p>提供单体和微服务，并能体验从单体到微服务架构的改造全过程，深入理解两种架构的优缺点。</p>
+  </div>
+
+  <div class="column">
+    <h3>面试硬核</h3>
+    <p>设计贴近校招实际需求，提供把项目写进简历全套模板，提供简历修改及 1V1 咨询服务。</p>
+  </div>
+
+</div>
+
+<div class="columns">
+
+
+   <div class="column">
+    <h3>代码质量</h3>
+    <p>前大厂一线开发现团队 leader 亲自下场，严格遵循代码规范和最佳实践，提高代码质量和维护性。</p>
+  </div>
+
+  <div class="column">
+    <h3>持续集成</h3>
+    <p>提供持续集成和持续部署的完整配置，带你从 0-1 用 docker 上线项目。</p>
+  </div>
+
+  <div class="column">
+    <h3>产品设计</h3>
+    <p>提供产品设计文档，包括产品需求、产品架构、产品原型等。</p>
+  </div>
+
+</div>
+
+
 ## 🎯实战项目
 
 * [PmHub](https://pmhub.laigeoffer.cn/
@@ -92,7 +131,7 @@ hideRightBar: true
 
 
 
-## 快速上手
+<!-- ## 快速上手
 
 ```bash
 # clone the project
@@ -106,7 +145,7 @@ npm install # or yarn install
 
 # develop
 npm run dev # or yarn dev
-```
+``` -->
 
 <!-- ## ⚡️未来...
 
