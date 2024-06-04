@@ -3,6 +3,9 @@ home: true
 heroImage: /img/web-laigeoffer.jpg
 heroText: 🚀来个offer-民间开源实战项目聚集地
 tagline: 助力学生党和社招党拿到一个更好的 offer 💪🏻
+actionText: 立刻进入 →
+actionLink: /project/laigeoffer/pmhub/about/
+
 object-fit: cover;"
 postList: none
 sidebar: false
@@ -55,7 +58,7 @@ hideRightBar: true
 1. *Star* 并 分享这个项目 :rocket: 
 2. 关注公众号`苍何`，回复`666`，可获取 [2000G 学习资源](https://laigeoffer.cn/)
 
-![来个offer-公众号-关注](https://cdn.tobebetterjavaer.com/stutymore/来个offer-公众号-关注.jpg)
+![苍何的公众号](https://cdn.tobebetterjavaer.com/stutymore/扫码_搜索联合传播样式-标准色版.bmp)
 
 
 3. 谢谢！:heart:
@@ -77,15 +80,17 @@ hideRightBar: true
     <tr>
       <td align="center" valign="middle">
         <img src="https://cdn.tobebetterjavaer.com/stutymore/%E6%A0%87%E5%87%86.png" class="no-zoom" style="width:120px;margin: 10px;">
-        <p>PmHub微信群(添加我微信备注"加群")</p>
+        <p>来个 offer 微信群(添加我微信备注"加群")</p>
       </td>
       <td align="center" valign="middle">
-        <img src="https://cdn.tobebetterjavaer.com/stutymore/qq-pmhub.jpg" class="no-zoom" style="width:120px;margin: 10px;">
-        <p>PmHub QQ群: 956565862</p>
+        <img src="https://cdn.tobebetterjavaer.com/stutymore/公众号.jpg" class="no-zoom" style="width:120px;margin: 10px;">
+        <p>关注官方公众号: 苍何，回复：2</p>
       </td>
     </tr>
   </tbody>
 </table>
+
+
 
 ## 快速上手
 
