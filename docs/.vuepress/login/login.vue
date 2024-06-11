@@ -87,7 +87,7 @@
     width: 100%;
     max-height: 100vh;
     overflow-y: auto;
-    padding: 70px;
+    padding: 80px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
   }
