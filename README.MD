@@ -15,27 +15,35 @@
 
 ## 😁关于组织
 
-①、沉默王二，原创公众号“沉默王二”的作者，累计 20 万+读者关注，他的 Java 进阶之路帮助很多同学进入 Java 的大门，他优化后的面渣逆袭也让很多面渣成功逆袭。
+①、组织发起人沉默王二，原创公众号“沉默王二”的作者，累计 20 万+读者关注，写出过无数篇 10 万+ 的爆款文章，被迫成为众多流量党的抄袭（学习）和模仿对象（😂）。但这不重要，重要的是，他帮助很多同学成功拿到了满意的 offer，随便贴几张截图留点证据吧。
 
 度小满、专科20万年包、郑州国企：
 
-![度小满、专科跳槽、郑州国企](https://cdn.tobebetterjavaer.com/stutymore/readme-20231221211916.png)
+![](https://cdn.tobebetterjavaer.com/stutymore/readme-20231221211916.png)
 
 华为、小红书、美团：
 
-![华为、小红书、美团](https://cdn.tobebetterjavaer.com/stutymore/readme-20231221213449.png)
+![](https://cdn.tobebetterjavaer.com/stutymore/readme-20231221213449.png)
 
-2014 年，二哥开始在 CSDN 写博客，累计 40 万+读者关注，两届博客之星，更是成为很多同学心目中的榜样和前进的动力。
+2014 年，二哥开始在 CSDN 写博客，累计 40 万+读者关注，两届博客之星，更是成为很多同学心目中的榜样和前进的动力，继续贴点证据吧。
 
-随后在知乎、掘金、博客园、B站等平台也累计了大量粉丝，掘金优秀作者，知乎累计阅读超过 2000 万。
+![](https://cdn.tobebetterjavaer.com/paicoding/02192a3d4dd85292062429852837e340.png)
+
+随后在知乎、掘金、博客园、B站等平台也累计了大量粉丝，就只提一句知乎上的数据吧，很多回答都成为现象级，其中最高的一篇足足有 415万+阅读，什么概念，大家可以感受一下，关键是很多同学都因此而受益。
+
+![知乎上恐怖的阅读数据](https://cdn.tobebetterjavaer.com/stutymore/01.来个offer开源实战项目-20240619184718.png)
 
 2019 年，二哥出版了《Web 全栈开发进阶之路》一书，获得了很多同学的好评。2022 年开始在 GitHub 上做开源知识库《[二哥的 Java 进阶之路](https://github.com/itwanger/toBeBetterJavaer)》，截止到目前，已经累计收获 12000+ star，很多同学都是靠这个知识库踏上了 Java 进阶之路 🛫。
+
+![两个开源项目，收到无数好评](https://cdn.tobebetterjavaer.com/stutymore/01.来个offer开源实战项目-20240619185110.png)
 
 2023 年，创建《[Java 程序员进阶之路](https://javabetter.cn/zhishixingqiu/)》这个付费社群，目前已经有 5500+ 付费用户加入，该年也顺带荣登知识星球官方评选的 TOP100 星球。
 
 ![ 沉默王二-Java 程序员进阶之路](https://cdn.tobebetterjavaer.com/stutymore/README-20240330212257.png)
 
 2024 年，联合苍何创建“[来个 offer](https://laigeoffer.cn/)”组织，旨在帮助更多的同学拿到更好的 offer，PmHub 是我们推出的第二个实战项目，相信一定能够再创佳绩。
+
+![pmhub 的 GitHub 数据](https://cdn.tobebetterjavaer.com/stutymore/01.来个offer开源实战项目-20240619185314.png)
 
 ②、苍何，原创公众号“苍何”的作者，前大厂高级开发，如今是公司技术 leader，曾在支付宝、科大讯飞等大厂工作过，在微服务分布式方面有着丰富的经验。
 

@@ -45,7 +45,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             text: '技术派',
-            link: '/project/laigeoffer/paicoding/about/',
+            link: 'https://paicoding.com/article/detail/15',
           },
         ],
       },
@@ -72,7 +72,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '🌈加入学习群',
-        link: '/laigeoffer/studygroupabout/',
+        link: '/zsxq/',
         // items: [
         //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
         //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
