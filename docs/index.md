@@ -1,11 +1,10 @@
 ---
 home: true
 heroImage: /img/web-laigeoffer.jpg
-heroText: 🚀来个offer-开源实战项目聚集地
-tagline: 助力学生党和工作党拿到一个更好的 offer 💪🏻
+heroText: 二哥编程星球实战项目聚集地
+tagline: 和苍何联手，助力每一个渴望进步的小伙伴拿到一个更好的 offer 💪🏻
 actionText: 立刻进入 →
-actionLink: /project/laigeoffer/pmhub/about/
-
+actionLink: /pmhub/about/
 object-fit: cover;"
 postList: none
 sidebar: false
@@ -55,8 +54,8 @@ hideRightBar: true
 ## 🎯实战项目
 
 * [PmHub](https://pmhub.laigeoffer.cn/
-)：⭐️一套智能项目管理系统，包括用户、流程、项目管理、认证等微服务，一套成熟的企业级项目管理解决方案，将会帮助很多同学在校招/社招中斩获理想的 offer。
-* [技术派](https://paicoding.com)：⭐️一款好用又强大的开源社区，已帮助很多同学在校招中斩获满意的 offer。
+)：⭐️一套智能项目管理系统，包括用户、流程、项目管理、认证等微服务，一套成熟的企业级项目管理解决方案，将会帮助很多小伙伴在校招和社招中斩获理想的 offer。
+* [技术派](https://paicoding.com)：⭐️一款好用又强大的开源社区，已帮助很多小伙伴在校招中斩获满意的 offer。
 
 
 ## :sparkling_heart:支持这个项目

@@ -1,21 +1,20 @@
 
 <p align="center"><a href="https://laigeoffer.cn/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.tobebetterjavaer.com/stutymore/README-20240330213040.png" alt="logo"></a></p>
 
-<h1 align="center">来个offer-开源实战项目</h1>
+<h1 align="center">来个offer-二哥编程星球的实战项目聚集地</h1>
 <p align="center">
-  助力学生党和工作党拿个更好的offer💪🏻
+  联手苍何，助力每一个渴望进步的小伙伴拿到一个更好的offer💪🏻
 </p>
 
 ## 🎯实战项目
 
 * [PmHub](https://pmhub.laigeoffer.cn/
-)：⭐️一套智能项目管理系统，包括用户、流程、项目管理、认证等微服务，一套成熟的企业级项目管理解决方案，将会帮助很多同学在校招/社招中斩获理想的 offer。
-* [技术派](https://paicoding.com)：⭐️一款好用又强大的开源社区，已帮助很多同学在校招中斩获满意的 offer。
-* 更多新的项目，敬请期待...
+)：⭐️一套智能项目管理系统，包括用户、流程、项目管理、认证等微服务，一套成熟的企业级项目管理解决方案，将帮助很多小伙伴在校招和社招中斩获理想的 offer。
+* [技术派](https://paicoding.com)：⭐️一款好用又强大的开源社区，已帮助很多小伙伴在校招中斩获满意的 offer。
 
 ## 😁关于组织
 
-①、组织发起人沉默王二，原创公众号“沉默王二”的作者，累计 20 万+读者关注，写出过无数篇 10 万+ 的爆款文章，被迫成为众多流量党的抄袭（学习）和模仿对象（😂）。但这不重要，重要的是，他帮助很多同学成功拿到了满意的 offer，随便贴几张截图留点证据吧。
+①、组织发起人沉默王二，原创公众号“沉默王二”的作者，累计 20 万+读者关注，写出过无数篇 10 万+ 的爆款文章，被迫成为众多流量党的抄袭（学习）和模仿对象（😂）。但这不重要，重要的是，他已帮助很多小伙伴成功拿到了满意的 offer，随便贴几张截图留点证据吧。
 
 度小满、专科20万年包、郑州国企：
 
@@ -41,7 +40,7 @@
 
 ![ 沉默王二-Java 程序员进阶之路](https://cdn.tobebetterjavaer.com/stutymore/README-20240330212257.png)
 
-2024 年，联合苍何创建“[来个 offer](https://laigeoffer.cn/)”组织，旨在帮助更多的同学拿到更好的 offer，PmHub 是我们推出的第二个实战项目，相信一定能够再创佳绩。
+2024 年，联合苍何创建“[来个 offer](https://laigeoffer.cn/)”组织，旨在帮助更多的小伙伴拿到更好的 offer，PmHub 是我们推出的第二个实战项目，相信一定能够再创佳绩。
 
 ![pmhub 的 GitHub 数据](https://cdn.tobebetterjavaer.com/stutymore/01.来个offer开源实战项目-20240619185314.png)
 
@@ -96,8 +95,20 @@ git clone https://github.com/laigeoffer/laigeoffer.git
 cd laigeoffer
 
 # install dependency
-npm install # or yarn install
+npm install
 
 # develop
-npm run dev # or yarn dev
+npm run dev
 ```
+
+如果 npm 无法执行成功，可以切换到 yarn 试试。
+
+```bash 
+yarn install
+yarn run dev
+```
+
+我家里的电脑是通过 yarn 运行成功的。
+
+![](https://cdn.tobebetterjavaer.com/stutymore/README-20240623084537.png)
+

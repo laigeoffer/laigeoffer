@@ -18,8 +18,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "🚀来个offer",
-      description: '🚀来个 offer 民间开源实战项目聚集地，助力学生党和社招党拿到一个更好的 offer 💪🏻',
+      title: "来个offer",
+      description: '🚀来个offer——二哥编程星球的实战项目聚集地，助力每一个渴望进步的小伙伴拿到更好的 offer 💪🏻',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -29,16 +29,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
-      
-
       {
         text: '🔥项目教程',
-        link: '/project/laigeoffer/pmhub/about/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        link: '/pmhub/about/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
             text: 'PmHub',
-            link: '/project/laigeoffer/pmhub/about/',
+            link: '/pmhub/about/',
             // items: [
             //   { text: 'PmHub（智能项目管理平台）', link: '/project/laigeoffer/pmhub/about/' },
             // ],
@@ -149,8 +147,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: '苍何', // 必需
-      link: 'https://github.com/freestylefly', // 可选的
+      name: '苍何｜沉默王二', // 必需
+      link: 'https://github.com/laigeoffer/', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
@@ -173,11 +171,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           iconClass: 'icon-github',
           title: 'GitHub',
           link: 'https://github.com/laigeoffer',
-        },
-        {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
         },
       ],
     },
@@ -208,7 +201,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: '🚀来个 offer 民间开源实战项目聚集地，助力学生党和社招党拿到一个更好的 offer 💪🏻,Java，JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
+        content: '实战项目,沉默王二,苍何,Java,github,springboot,微服务,分布式,mysql,redis,spring,消息队列',
       },
     ],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
@@ -252,19 +245,6 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'thirdparty-search',
       {
         thirdparty: [
-          {
-            title: '在MDN中搜索',
-            frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-            behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-          },
-          {
-            title: '在Runoob中搜索',
-            frontUrl: 'https://www.runoob.com/?s=',
-          },
-          {
-            title: '在Vue API中搜索',
-            frontUrl: 'https://cn.vuejs.org/v2/api/#',
-          },
           {
             title: '在Bing中搜索',
             frontUrl: 'https://cn.bing.com/search?q=',
