@@ -45,11 +45,10 @@ hideRightBar: true
 
   <div class="column">
     <h3>产品设计</h3>
-    <p>提供完整的产品设计文档，包括产品需求、产品架构、产品原型等，这是别的项目不曾给你的，但工作后又不可或缺的能力。</p>
+    <p>提供<a href="https://lanhuapp.com/link/#/invite?sid=qxZji4oa">完整的产品设计文档</a>，包括产品需求、产品架构、产品原型等，这是别的项目不曾给你的，但工作后又不可或缺的能力。</p>
   </div>
 
 </div>
-
 
 ## 🎯实战项目
 
