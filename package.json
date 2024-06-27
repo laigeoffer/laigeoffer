@@ -33,6 +33,8 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "v-dialogs": "^2.2.0"
+    "v-dialogs": "^2.2.0",
+    "vue": "^2.7.16",
+    "vue-server-renderer": "^2.7.16"
   }
 }
