@@ -1,31 +1,30 @@
 <template>
     <div class="popup-container">
       <div class="popup-content">
-        <h2>该文档仅「来个offer项目交流圈」星球用户可见</h2>
-        <p>知识星球内容包括：</p>
+        <h2>该文档仅「二哥编程星球」的付费用户可见</h2>
   
         <ol>
           <li>
-            <a href="#"> 付费文档</a>：PmHub、技术派等项目配套的120+篇教程查看权限
+            <a href="#"> 付费文档</a>：微服务实战项目PmHub、前后端分离项目技术派等高质量项目的付费文档，超200篇，永久查看权限哦。
           </li>
           <li>
-            <a href="#">面试指南</a>：校招、社招的 40 万+字面试求职攻略
+            <a href="https://javabetter.cn/zhishixingqiu/mianshi.html">面试指南</a>：我们编撰了超 50 万字的面试指南，包含面试准备篇、求职名单篇、面经分享篇、职场修炼篇、技术提升篇、场景设计题篇等，帮你打通求职的任督二脉。
           </li>
           <li>
-            <a href="#">专属问答</a>：向我们 1v1 发起提问，内容不限于 offer 选择、学习路线、职业规划等
+            <a href="#">专属问答</a>：向二哥和苍何发起 1v1 提问，内容不限于 offer 选择、学习路线制定、职业规划、技术疑难杂症解决等。
           </li>
           <li>
-            <a href="#">简历修改</a>：提供简历修改服务，附赠星球 100+优质简历模板可供参考
+            <a href="https://javabetter.cn/zhishixingqiu/jianli.html">简历修改</a>：提供精心的简历修改服务，附赠星球 500 份优质简历模板，为你打造一份投了就有笔试和面试的高分简历。
           </li>
         </ol>
         <div class="qr-section">
-          <img src="https://cdn.tobebetterjavaer.com/stutymore/二哥星球-laigeoffer分享码_优惠券.jpg" alt="QR Code" />
+          <img src="https://cdn.tobebetterjavaer.com/stutymore/image-20240627144800.png" alt="QR Code" />
         </div>
         <div class="steps">
           <p>步骤 1: [打开微信] -> [扫描上方二维码] -> [加入知识星球]</p>
           <!-- <p>步骤 2: [点击 <a href="#">链接地址</a>] -> [获得验证码]</p> -->
-          <p>步骤 2: 访问星球置顶帖球友必看，获取项目配套文档的语雀访问地址和密码</p>
-          <p>步骤 3: 微信联系：binshen818，获得验证码此页面解锁文档</p>
+          <p>步骤 2: 访问星球置顶帖<a href="https://t.zsxq.com/91hPx">球友必看</a>，获取付费文档的语雀访问地址和密码</p>
+          <p>步骤 3: 微信联系：binshen818 解锁文档并加入 VIP 交流群</p>
         </div>
         <div class="input-section">
           <input type="text" v-model="verificationCode" placeholder="请输入解锁验证码" />
@@ -76,20 +75,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .popup-content {
     background: white;
-    border-radius: 8px;
     max-width: 700px;
     width: 100%;
     max-height: 100vh;
-    overflow-y: auto;
-    padding: 80px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: left;
+    font-size: 16px;
   }
   
   .qr-section img {
@@ -104,7 +100,7 @@
   
   .input-section input {
     padding: 10px;
-    width: calc(100% - 22px);
+    width: calc(100% - 110px);
     margin-bottom: 10px;
   }
   
