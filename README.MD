@@ -99,6 +99,8 @@ npm install
 
 # develop
 npm run dev
+
+# 如果遇到 vue 版本问题，可以尝试安装低版本的 vue，因为 vdoing 是基于 vuepress 1 开发的 npm install vue@2.7.16
 ```
 
 如果 npm 无法执行成功，可以切换到 yarn 试试。
