@@ -103,6 +103,10 @@ npm run dev
 # 如果遇到 vue 版本问题，可以尝试安装低版本的 vue，因为 vdoing 是基于 vuepress 1 开发的 npm install vue@2.7.16
 ```
 
+启动成功后，控制台会有一个 success 的提示信息，戳链接就可以跳转到预览界面了。
+
+![来个 offer：启动成功](https://cdn.tobebetterjavaer.com/stutymore/README-20240725104218.png)
+
 如果 npm 无法执行成功，可以切换到 yarn 试试。
 
 ```bash 
@@ -112,5 +116,5 @@ yarn run dev
 
 我家里的电脑是通过 yarn 运行成功的。
 
-![](https://cdn.tobebetterjavaer.com/stutymore/README-20240623084537.png)
+![来个 offer：yarn 启动](https://cdn.tobebetterjavaer.com/stutymore/README-20240623084537.png)
 
