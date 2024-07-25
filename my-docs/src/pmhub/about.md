@@ -1,0 +1,124 @@
+---
+title: PmHub 是什么？一个牛逼的微服务项目管理系统
+shortTitle: 什么是PmHub？
+tags: 
+  - pmhub
+  - 微服务
+  - 分布式
+  - 项目管理
+requiresAuth: false
+categories: 
+  - PmHub
+  - 项目介绍
+---
+
+::: tip 友情提示
+
+1、**欢迎蹂躏我们的项目**：[在线访问地址](https://pmhub.laigeoffer.cn/)，记得轻点哦。
+
+2、**欢迎 star 我们的项目**：[项目源码地址](https://github.com/laigeoffer/pmhub)，记得狠一点哦。
+
+3、**欢迎品鉴我们的教程**：[《PmHub 学习教程》](https://laigeoffer.cn/pmhub/learn/)，记得认真点哦。
+
+4、**欢迎加入我们的星球**：[来个 offer 星球介绍](https://laigeoffer.cn/zsxq/)，记得早一点哦。
+
+
+:::
+
+
+## 项目描述
+
+PmHub 是一套基于 SpringCloud Alibaba & LLM 的智能项目管理系统，该项目旨在帮助小伙伴们快速掌握微服务/分布式项目的架构设计和开发流程。如果你想在校招或者社招中拿到一个满意的 offer，PmHub 将是一个非常 nice 的选择😄。
+
+PmHub 拆分了用户、流程、项目管理、认证等 4 个微服务，整合了 Redis 缓存、RocketMQ 消息队列、Docker 容器、Jenkins 自动化部署、Spring Security 安全框架、Nacos 服务注册和发现、Spring Boot Actuator 服务监控、Skywalking 链路追踪、Sentinel 熔断降级、Seata 分布式事务、Vue 前端框架等互联网开发中需要用到的绝大多数主流技术栈。
+
+为了方便大家循序渐进式地学习，我们贴心地准备了两个版本：
+
+* SpringBoot 单体架构版：适合初学者，可直接运行 pmhub-boot 模块下的 pmhub-admin 目录下的 PmhubApplication 类即可。
+* Spring Cloud 微服务架构版：适合有一定基础，想进阶微服务/分布式的小伙伴，可以分别启动网关、系统、流程、项目管理、认证等多个服务。
+
+大家可以根据自己的实际情况选择对应的版本进行学习，我们将会倾其所有，在第一时间帮助大家解决所有学习过程遇到的问题，让大家的学习曲线变得非常丝滑。
+
+![laigeoffer-pmhub-业务大图](https://cdn.tobebetterjavaer.com/stutymore/01.什么是PmHub-20240708113253.png)
+
+## 关于来个 offer 组织
+
+来个 offer 组织由二哥发起，苍何主理，旨在帮助每一个渴望进步的小伙伴拿到一个更好的offer💪🏻
+
+* 二哥，原创公众号「沉默王二」累计 20 万+ 读者，GitHub 星标 12000+ 开源知识库《二哥的 Java 进阶之路》作者，已帮助很多很多小伙伴成功拿到满意的 offer。
+* 苍何，原创公众号“苍何”的作者，前大厂技术专家，阿里云专家博主，CSDN博客专家，曾在支付宝、科大讯飞等大厂工作过，在微服务分布式方面有着丰富的经验。
+
+项目|码云|GitHub|简介
+---|---|---|---
+PmHub| [Gitee](https://gitee.com/laigeoffer/pmhub) | [GitHub](https://github.com/laigeoffer/pmhub) | ⭐️一套智能项目管理系统，包括用户、流程、项目管理、认证等微服务，一套成熟的企业级项目管理解决方案，将会帮助很多小伙伴在校招和社招中斩获理想的 offer。
+技术派| [Gitee](https://gitee.com/itwanger/paicoding) | [GitHub](https://github.com/itwanger/paicoding) | ⭐️一款好用又强大的开源社区，已帮助很多小伙伴在校招中斩获满意的 offer。
+
+
+## 项目详情
+
+### 技术架构
+
+下面这张系统架构图可以帮助大家快速了解 PmHub 的组织架构，从前端到网关、从系统应用到基础服务、从存储技术到运维部署，可以说一目了然。
+
+![pmhub-系统架构图](https://cdn.tobebetterjavaer.com/stutymore/01.什么是PmHub-20240708113736.png)
+
+下面这张架构选型图可以帮助大家快速了解 PmHub 的技术选型，我们会在[技术架构选型](https://laigeoffer.cn/pmhub/tech-architecture/)中更详细的说明为什么会选择该技术，做到授人以鱼也授人以渔嘛😄。
+
+![pmhub-架构选型](https://cdn.tobebetterjavaer.com/stutymore/01.什么是PmHub-20240708113947.png)
+
+下面这张技术架构图可以帮助大家快速了解 PmHub 的技术架构，以及各个模块之间的交互关系。
+
+![pmhub-技术架构图](https://cdn.tobebetterjavaer.com/stutymore/01.什么是PmHub-20240702103552.png)
+
+怎么样？通过这三张手绘图，相信大家应该已经了解 PmHub 了！优质的项目，离不开一张清晰的鸟瞰图（😄）。
+
+### 项目演示
+
+- 项目仓库（GitHub）：[https://github.com/laigeoffer/pmhub](https://github.com/laigeoffer/pmhub)
+- 项目仓库（码云，国内访问速度更快）：[https://gitee.com/laigeoffer/pmhub](https://gitee.com/laigeoffer/pmhub)
+- 项目演示地址：[https://pmhub.laigeoffer.cn](https://pmhub.laigeoffer.cn)（微信搜「苍何」，关注我们官方的公众号，回复 `pmhub` 获取体验账号和密码，顺带帮我们新增一个粉丝，哈哈哈，开源不易，请满足一下我们的虚荣心（😁）。）
+
+![PmHub首页展示](https://cdn.tobebetterjavaer.com/stutymore/20240407163006.png)
+
+![PmHub项目概览页](https://cdn.tobebetterjavaer.com/stutymore/202404071500496.png)
+
+![PmHub任务编辑页](https://cdn.tobebetterjavaer.com/stutymore/20240407163256.png)
+
+### 代码展示
+
+PmHub 的代码完全遵守大厂的代码规约，涵盖异常日志、单元测试、安全规约、工程规约、设计规约等，能够让大家在阅读源码的时候一目了然，从而耳濡目染地养成良好的编码习惯。
+
+![pmhub代码展示](https://cdn.tobebetterjavaer.com/stutymore/20240529152747.png)
+
+### 代码结构
+
+PmHub 的代码结构清晰，模块划分明确，每个模块都有明确的职责，方便大家快速定位到业务代码。
+
+```
+com.laigeoffer.pmhub     
+├── pmhub-ui              // 前端框架 [1024]
+├── pmhub-gateway         // 网关模块 [6880]
+├── pmhub-auth            // 认证中心 [6800]
+├── pmhub-api             // 接口模块
+│       └── pmhub-api-system                          // 系统接口
+├── pmhub-base          // 通用模块
+│       └── pmhub-base-core                           // 核心模块
+│       └── pmhub-base-datasource                     // 多数据源
+│       └── pmhub-base-seata                          // 分布式事务
+│       └── pmhub-base-security                       // 安全模块
+│       └── pmhub-base-swagger                        // 系统接口
+├── pmhub-modules         // 业务模块
+│       └── pmhub-system                              // 系统模块 [6801]
+│       └── pmhub-gen                                 // 代码生成 [6802]
+│       └── pmhub-job                                 // 定时任务 [6803]
+│       └── pmhub-project                             // 项目服务 [6806]
+│       └── pmhub-workflow                            // 流程服务 [6808]
+├── pmhub-monitor             						  // 监控中心 [6888]                 
+├──pom.xml                                            // 公共依赖
+```
+
+## 加群交流
+
+独乐乐不如众乐乐，如果你急需一群志同道合的小伙伴，欢迎👏加入 PmHub 的技术交流群。微信扫码/长按识别关注我们的官方公众号「苍何」，回复「加群」，项目主理人苍何会用他粗壮有力的大拇指拉你入群。
+
+![苍何的公众号](https://cdn.tobebetterjavaer.com/stutymore/扫码_搜索联合传播样式-标准色版.bmp)

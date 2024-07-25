@@ -1,0 +1,46 @@
+---
+title: PmHub有原型设计吗？
+date: 2024-05-21 06:35:38
+categories: 
+  - PmHub
+  - 项目介绍
+requiresAuth: false
+---
+
+## PmHub有原型设计吗？
+
+一个项目或者说一个产品，在开发之前一定要是进行细致地原型设计。
+
+原型设计，就是设计一个产品的原型图，或者设计一个产品该有的样子。
+
+通常来说，原型设计是产品经理负责的事，但我觉得，作为开发人员，懂的必要的产品知识也是非常重要的。也是提升求职竞争力的一大品质。
+
+因为我觉得能设计一个好产品，一定是有审美的，那撰写的简历肯定是吸睛的、赏心悦目的，面试官或者 HR 肯定也会更青睐。
+
+## 原型设计工具
+
+原型设计，有很多工具，比如，Axure RP，摹客等，我目前用的是 Axure。本地设计好之后，可以直接在浏览器进行预览。
+
+![Axure原型设计](https://cdn.tobebetterjavaer.com/stutymore/20240530160237.png)
+
+![Axure原型在线预览](https://cdn.tobebetterjavaer.com/stutymore/20240530160628.png)
+
+用 Axure app 还可以一键发布到蓝湖，实现在线团队查看。
+
+![一键上传](https://cdn.tobebetterjavaer.com/stutymore/20240530160710.png)
+
+
+## PmHub 产品原型在线查看
+
+在线查看地址：[https://lanhuapp.com/link/#/invite?sid=qxZji4oa](https://lanhuapp.com/link/#/invite?sid=qxZji4oa)
+
+![在线查看地址](https://cdn.tobebetterjavaer.com/stutymore/20240530161308.png)
+
+## 如何获取PmHub原型源文件
+
+源文件我们花费了很多心血，反复修改了多次，最终形成了大家现在看到的产品原型，所以目前仅对[二哥编程星球的付费用户](https://laigeoffer.cn/zsxq/)免费查看。
+
+如果有需要也可以关注我们的公众号【苍何】回复【原型】关键字，第一时间获取更新信息。
+
+![苍何的公众号](https://cdn.tobebetterjavaer.com/stutymore/扫码_搜索联合传播样式-标准色版.bmp)
+

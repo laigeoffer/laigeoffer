@@ -1,0 +1,68 @@
+---
+title: PmHub有真实面经吗？
+date: 2024-06-11 15:42:08
+categories: 
+  - PmHub
+  - 项目介绍
+---
+
+PmHub 就是为大家找工作拿 offer 服务的，所以我们也花了很多心思为大家精心准备了简历模板。
+
+并且我们也会不断向[球友们](https://laigeoffer.cn/zsxq/)征集关于 PmHub 的真实面经，并在星球里及时更新，每隔一周，也会把真实面经同步到这个帖子中供大家参考。
+
+一起冲刺 offer 的路上，你并不孤单。
+
+目前我们已经挖掘了 10 个亮点供大家把 PmHub 写到简历上，都是能让 HR/面试官眼前一亮的，有深度有吸引力，包括：
+
+- Gateway 实现自定义网关统一鉴权统计接口调用时间
+- 使用 Redis+Lua 基于令牌桶实现限流
+- 使用 RocketMQ 实现审批消息异步解耦
+- 集成 OpenFeign+Sentinel 实现服务降级和网关流量控制
+- 集成 Redis 分布式锁保障流程状态更新
+- 通过分布式事务 Seata 保证任务审批状态一致性
+- 自定义注解+AOP 实现服务接口鉴权和内部认证
+- 整合 TTL 缓存用户数据
+- 如何用 Docker 容器化部署项目
+- 使用 Skywalking 监控项目性能
+- 采用 Cache Aside 模式保证缓存和数据库一致性
+
+![如何把 PmHub 写进简历](https://cdn.tobebetterjavaer.com/stutymore/20240611155429.png)
+
+并且还配套详细的教程供大家学习，让大家真正做到知其然知其所以然。
+
+![Seata 分布式事务保证任务审批状态一致性](https://cdn.tobebetterjavaer.com/stutymore/03.如何学习PmHub-20240702145210.png)
+
+后面还会继续追加，让大家不再为写简历发愁（愁到掉头发😄）。
+
+::: tip 为什么做知识星球
+
+PmHub 的项目源码在 GitHub 和码云上是完全开源的，但教程我们确实花费了太多时间和心血，希望真心喜欢这个项目的小伙伴，以及从 PmHub 项目中得到帮助和提升的小伙伴能给予我们一点点肯定和支持。
+
+这不仅能激励我们持续创作，为大家提供更多优质的开源项目，同时也能刺激我们向大家提供更高质量更长久的服务。
+
+欢迎能理解我们的小伙伴加入[二哥的编程星球](https://laigeoffer.cn/zsxq/)。
+
+![已经有很多球友加入我们](https://cdn.tobebetterjavaer.com/stutymore/07.项目真实面经-20240711211137.png)
+
+:::
+
+
+## 专属内容
+
+嗨嗨嗨，如果你正在为项目经历发愁，简历上只能写一些烂大街的项目，甚至连写什么都不知道，投出去的简历石沉大海，面试机会寥寥无几，那么请毫不犹豫地加入[来个 offer 编程星球](https://laigeoffer.cn/zsxq/)。我们将为你解决燃眉之急：
+
+1、**<span style="color:red;">付费文档</span>**：微服务实战项目[PmHub](https://laigeoffer.cn/learn/)、前后端分离项目[技术派](https://javabetter.cn/zhishixingqiu/paicoding.html)等高质量项目的付费文档，超 60 万字，注意是一次付费享受永久查看权限哦😯。
+
+2、**<span style="color:red;">面试指南</span>**：我们还编撰了超 50 万字的[Java面试指南](https://javabetter.cn/zhishixingqiu/mianshi.html)，包含面试准备篇、求职名单篇、面经分享篇、职场修炼篇、技术提升篇、场景设计题篇等，帮你打通求职的任督二脉，真正地吊打“面试官”。
+
+3、**<span style="color:red;">专属问答</span>**：向二哥和苍何发起 1v1 提问，内容不限于 offer 选择、学习路线制定、职业规划、技术疑难杂症解决等。
+
+4、**<span style="color:red;">简历修改</span>**：提供精心的[简历修改服务](https://javabetter.cn/zhishixingqiu/jianli.html)（已修改超 3000 份），附赠星球 500 份优质简历模板，为你打造一份投了就有笔试或者面试的高分简历。
+
+5、**<span style="color:red;">学习环境</span>**：打造一个沉浸式的学习环境，营造一种高考冲刺、大学考研的氛围，对秋招、春招、社招的同学格外有用！
+
+那欢迎大家扫下面的优惠券（或者长按自动识别）加入我们吧，[星球](https://laigeoffer.cn/zsxq/)目前定价 149 元/年，优惠完只需要 119 元，每天不到 0.33 元，绝对的超值。
+
+![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/pmhub-苍何的星球优惠券.png)
+
+星球也马上 6000 人了，新一轮涨价已经箭在弦上，毕竟人多了，我们付出的时间成本也会更多，相信大家也都能理解。
