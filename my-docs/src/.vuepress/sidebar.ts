@@ -12,10 +12,12 @@ export default sidebar({
         "about",
         "why",
         "learn",
+        "write-to-resume",
         "tech-architecture",
         "product-prototype",
         "api-doc",
         "real-interview",
+        "qa",
       ],
     },
     {
