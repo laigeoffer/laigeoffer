@@ -18,5 +18,17 @@ export default sidebar({
         "real-interview",
       ],
     },
+    {
+      text: "快速开始",
+      collapsible: true,
+      prefix: "quickstart/",
+      children: [
+        "environment",
+        "backend",
+        "frontend",
+        "docker",
+        "nginx",
+      ],
+    },
   ],
 });

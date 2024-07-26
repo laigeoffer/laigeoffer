@@ -7,7 +7,7 @@ heroText: 来个 offer 吧
 heroImageStyle: {
   width: '290px',
 }
-tagline: 是二哥联手苍何一起成立的一个开源组织，旨在通过实战项目帮助每一个渴望进步的小伙伴拿到一个更好的 offer 💪🏻。
+tagline: 二哥编程星球实战项目聚集地，联手苍何，帮助渴望进步的小伙伴拿到一个更好的 offer 💪🏻，目前已推出微服务实战项目 PmHub 和前后端分离项目技术派。
 actions:
   - text: 加入学习群
     icon: lightbulb
