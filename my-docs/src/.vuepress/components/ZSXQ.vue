@@ -35,8 +35,10 @@
   </template>
   
   <script>
+  // Path: my-docs/src/.vuepress/login/login.vue
   import { STORAGE_KEY } from './helper'
   
+  // 该组件用于展示知识星球的二维码，以及提交验证码
   export default {
     data() {
       return {
@@ -44,9 +46,10 @@
       };
     },
     methods: {
+      // 提交验证码
       submitCode() {
         if (this.verificationCode) {
-          
+          // 验证码为 laigeoffer-666 时，表示验证通过
           if(this.verificationCode === "laigeoffer-666") {
             // 验证码提交逻辑
             const data = JSON.stringify({
@@ -54,6 +57,7 @@
               time: new Date().getTime()
             })
           
+            // 将验证通过的数据存储到 localStorage 中
             window.localStorage.setItem(STORAGE_KEY, data)
             // 关闭窗口
             this.$emit('close', true)
