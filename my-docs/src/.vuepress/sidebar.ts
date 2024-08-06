@@ -32,5 +32,13 @@ export default sidebar({
         "nginx",
       ],
     },
+    {
+      text: "开篇词",
+      collapsible: true,
+      prefix: "introduction/",
+      children: [
+        "beginner-learn",
+      ],
+    },
   ],
 });

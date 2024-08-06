@@ -34,46 +34,6 @@
     </div>
   </template>
   
-  <script>
-  // Path: my-docs/src/.vuepress/login/login.vue
-  import { STORAGE_KEY } from './helper'
-  
-  // 该组件用于展示知识星球的二维码，以及提交验证码
-  export default {
-    data() {
-      return {
-        verificationCode: ''
-      };
-    },
-    methods: {
-      // 提交验证码
-      submitCode() {
-        if (this.verificationCode) {
-          // 验证码为 laigeoffer-666 时，表示验证通过
-          if(this.verificationCode === "laigeoffer-666") {
-            // 验证码提交逻辑
-            const data = JSON.stringify({
-              name: this.verificationCode,
-              time: new Date().getTime()
-            })
-          
-            // 将验证通过的数据存储到 localStorage 中
-            window.localStorage.setItem(STORAGE_KEY, data)
-            // 关闭窗口
-            this.$emit('close', true)
-            // 可以在这里添加提交验证码的API调用
-          } else {
-            alert("验证码错误，请加入星球后获取");
-          }
-          
-        } else {
-            alert("请输入验证码");
-        }
-      }
-    }
-  };
-  </script>
-  
   <style scoped>
   .popup-container {
     display: flex;

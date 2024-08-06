@@ -56,8 +56,25 @@ export default hopeTheme({
     //   categoryId:"DIC_kwDOHBJsss4COJOx",
     // },
 
+    notice: [
+      {
+        path: "/pmhub/introduction/",
+        fullscreen: true,
+        confirm: true,
+        title: "解锁内容",
+        content: "该文档仅「二哥编程星球」的付费用户可查看全部内容",
+        actions: [
+          {
+            text: "加入二哥编程星球",
+            link: "https://laigeoffer.cn/zsxq/",
+            type: "primary",
+          },
+        ],
+      },
+    ],
+
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "SiteInfo", "VPBanner"],
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。

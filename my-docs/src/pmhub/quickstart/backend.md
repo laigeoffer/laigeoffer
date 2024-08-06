@@ -7,7 +7,6 @@ categories:
 author: 
   name: 苍何
   link: https://github.com/laigeoffer
-requiresAuth: false
 ---
 
 本地电脑上项目运行环境依赖组件以及版本信息如下：
