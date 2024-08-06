@@ -36,7 +36,7 @@ head:
 
 星球最开始的定价是 99 元，第二波是 109 元，第三波是 119 元，后来是 129 元，现在星球门票也涨到了 149 元，老读者看到这就真的不要再犹豫了，立马加入就对了，每天不到 0.33 元，但对你的学习和求职真的帮助特别大。
 
-![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/readme-二哥的星球优惠券.png)
+![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/pmhub-苍何的星球优惠券.png)
 
 星球的不断发展壮大，也能印证这一点，二哥的编程星球的确得到了大家的认可。新项目 [pmhub](https://javabetter.cn/zhishixingqiu/pmhub.html) 刚上线，搞一搞人气，这里再给大家补发一波 30 元优惠券，超超超低价 119 元给到大家。可以去其他的星球对比一下，绝对超值。
 
@@ -171,7 +171,7 @@ admin 端星球白名单：
 
 看到这就迫不及待想要加入的小伙伴，直接扫下面这个二维码，**新人直减 30 元，优惠完每天不到 0.33 元，真的划算**！
 
-![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/readme-二哥的星球优惠券.png)
+![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/pmhub-苍何的星球优惠券.png)
 
 随着时间的推移，加入二哥编程星球的球友会越来越多，二哥投入的时间也会越来越多，星球能够提供给大家的价值也会越来越多，所以星球也会涨价到 159 元、169 元，以此类推，所以，想要改变自己的小伙伴还是要趁早加入，**早就是优势**是继牛顿万有引力定律之后最永恒的真理（😁）。
 
@@ -285,7 +285,7 @@ admin 端星球白名单：
 
 看到这就下定决心加入二哥编程星球的小伙伴，可以长按识别或者扫下面这个 30 元的优惠券，早买早享受！
 
-![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/readme-二哥的星球优惠券.png)
+![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/pmhub-苍何的星球优惠券.png)
 
 ## 三、为什么要创建知识星球呢？
 
@@ -349,7 +349,7 @@ admin 端星球白名单：
 
 看到这已经不再犹豫的小伙伴，可以长按识别或者扫下面这个 30 元的优惠券加入二哥的编程星球，30 元不仅是 2024 年也是 2025 年的最大优惠力度！
 
-![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/readme-二哥的星球优惠券.png)
+![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/pmhub-苍何的星球优惠券.png)
 
 ## 四、什么是知识星球？
 
@@ -437,7 +437,7 @@ admin 端星球白名单：
 
 相信看到这里的你已经迫不及待、下定决心加入二哥的编程星球了，扫下面的二维码或者长按识别付费后就可以加入了。
 
-![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/readme-二哥的星球优惠券.png)
+![微信扫码或者长按识别](https://cdn.tobebetterjavaer.com/stutymore/pmhub-苍何的星球优惠券.png)
 
 
 星球目前定价**149 元/年，并且会送你 30 元的优惠券**，但提供的服务远远超出了 119 元 这个价格可以承载的价值。
