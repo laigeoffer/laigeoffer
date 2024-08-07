@@ -168,7 +168,6 @@ docker run --name my-redis -d redis
 找到 pmhub-system 项目（在 pmhub-modules 下），右键 Run PmHubSystemApplication.main()。
 pmhub-system 启动前需要修改 nacos 中的 pmhub-system-dev.yml 配置文件，修改数据库连接信息为你自己的数据库。
 
-![修改pmhub-system配置](img.png)
 
 ④、启动 pmhub-project 项目管理服务
 

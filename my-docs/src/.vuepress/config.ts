@@ -40,7 +40,7 @@ export default defineUserConfig({
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?5230ac143650bf5eb3c14f3fb9b1d3ec";
+          hm.src = "https://hm.baidu.com/hm.js?1bf37757658079324c657f14cf50284d";
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
