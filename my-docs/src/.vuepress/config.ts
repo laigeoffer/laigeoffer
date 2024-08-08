@@ -17,6 +17,7 @@ export default defineUserConfig({
   head: [
     ["meta", { name: "robots", content: "all" }],
     ["meta", { name: "author", content: "沉默王二" }],
+    ["meta", { name: "baidu-site-verification", content: "codeva-vAHvCVsrL1" }],
     [
       "meta",
       {
