@@ -1,13 +1,12 @@
 ---
 title: PmHub有原型设计吗？
+shortTitle: PmHub有原型设计吗？
 date: 2024-05-21 06:35:38
 categories: 
   - PmHub
   - 项目介绍
 requiresAuth: false
 ---
-
-## PmHub有原型设计吗？
 
 一个项目或者说一个产品，在开发之前一定要是进行细致地原型设计。
 

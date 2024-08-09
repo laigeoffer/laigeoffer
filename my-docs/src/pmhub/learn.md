@@ -1,12 +1,12 @@
 ---
-title: 解锁PmHub教程，一套基于 SpringCloud & LLM 的智能项目管理系统
+title: 如何学习PmHub？如何解锁PmHub的教程，包括 20 万+字的硬核付费内容？
 shortTitle: 如何学习PmHub？
 date: 2024-05-21 06:38:56
 categories: 
   - PmHub
   - 项目介绍
 requiresAuth: false
-description: PmHub 拆分了用户、流程、项目管理、认证等 4 个微服务，整合了 Redis 缓存、RocketMQ 消息队列、Docker 容器、Jenkins 自动化部署、Spring Security 安全框架、Nacos 服务注册和发现、Spring Boot Actuator 服务监控、Skywalking 链路追踪、Sentinel 熔断降级、Seata 分布式事务、Vue 前端框架等互联网开发中需要用到的绝大多数主流技术栈。
+description: PmHub 是二哥联合苍何推出的一个微服务实战项目，前后历经 5 个月，沉淀了 20 万+ 字的付费教程，包括项目介绍、技术架构、项目实战、面试题等，本文将详细介绍如何学习 PmHub，如何解锁 PmHub 的教程。
 head:
   - - meta
     - name: keywords
@@ -167,7 +167,7 @@ PmHub 作为一套完整的企业级项目管理系统，功能比较多，这�
 
 PmHub 并不是我们一时兴起发起的，而是我和苍何在做完充分准备和调研后做出的决定。这里介绍一下 PmHub 的两位负责人吧：
 
-- 沉默王二，原创公众号“沉默王二”累计 20 万+ 读者，GitHub 星标 12000+ 开源知识库《二哥的 Java 进阶之路》作者，内容帮助很多很多小伙伴成功拿到满意的 offer。
+- 沉默王二，原创公众号“沉默王二”累计 20 万+ 读者，GitHub 星标 12000+ 开源知识库《[二哥的 Java 进阶之路](https://github.com/itwanger/toBeBetterJavaer)》作者，内容帮助很多很多小伙伴成功拿到满意的 offer。
 - 苍何：原创公众号“苍何”的作者，前大厂高级开发，如今是公司技术 leader，曾在支付宝、科大讯飞等大厂工作过，在微服务分布式方面有着丰富的经验。
 
 PmHub 项目前期的需求调研、产品原型设计，开发中的项目管理、缺陷管理，上线后的教程撰写，我们都是一丝不苟，力求做到最好。
@@ -246,6 +246,8 @@ CREATE TABLE `pmhub_project` (
 
 针对第一件事情，我们不仅会时刻关注项目仓库的 issue，还单独维护了一份《PmHub常见问题 Q&A
 》文档，同时我们也会在技术交流群里第一时间处理大家提出来的问题。
+
+![pmhub交流群](https://cdn.tobebetterjavaer.com/stutymore/learn-20240809153652.png)
 
 针对第二件事情，我们精心策划了 60+ 篇内容，预计更新 30 万+字。
 

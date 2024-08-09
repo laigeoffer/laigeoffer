@@ -6,5 +6,4 @@ categories:
 author: 
   name: 苍何
   link: https://github.com/freestylefly
-requiresAuth: true
 ---

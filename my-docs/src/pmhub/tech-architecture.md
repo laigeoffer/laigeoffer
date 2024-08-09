@@ -1,16 +1,13 @@
 ---
 title: PmHub是如何做架构选型的？
+discription: PmHub 拆分了用户、流程、项目管理、认证等 4 个微服务，整合了 Redis 缓存、RocketMQ 消息队列、Docker 容器、Jenkins 自动化部署、Spring Security 安全框架、Nacos 服务注册和发现、Spring Boot Actuator 服务监控、Skywalking 链路追踪、Sentinel 熔断降级、Seata 分布式事务、Vue 前端框架等互联网开发中需要用到的绝大多数主流技术栈。
 date: 2024-05-20 22:40:42
 categories: 
   - PmHub
   - 项目介绍
-requiresAuth: false
 ---
 
-
-## PmHub是如何做架构选型的？
-
-PmHub 开源项目一共经历了 2 次技术架构选型，因为一开始它是个单体的 SpringBoot 版本应用，采用的是 **SOA 模块化**架构设计，即按照不同的业务范围分不同的 Moudle，这也是单体应用中常见的设计思路。
+PmHub 一共经历了 2 次技术架构选型，因为一开始它是个单体的 SpringBoot 版本应用，采用的是 **SOA 模块化**架构设计，即按照不同的业务范围分不同的 Moudle，这也是单体应用中常见的设计思路。
 
 [技术派](https://javabetter.cn/zhishixingqiu/paicoding.html)项目就是单体版的，因为原计划 2 期做微服务版本，因为备案被小人恶意投诉，后来就搁浅了。
 
