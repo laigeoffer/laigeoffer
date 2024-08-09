@@ -78,20 +78,5 @@ commit信息补充完整，是解决什么问题或开发什么新功能，将�
 4.3、 唯一索引名为 uk_字段名；普通索引名则为idx_字段名；表中索引数量不要超过6个 .  建立索引在选择性高的字段上，不要在sex、status上建
 表中必须指定主键，且只有一个，主键的命名统一为: id
 
-<VPBanner
-  title="以下为付费内容"
-  content="为了让大家“无痛”掌握 PmHub，我们耗费了巨大心血，从项目立项，到代码编写、测试、部署，再到教程撰写，前后足足经历了 5 个月的时间，并且我们还计划再用 3 个月的时间，为大家再更新 60 篇预计 25 万字的硬核教程。希望大家能支持我们一把。"
-  logo="https://cdn.tobebetterjavaer.com/stutymore/image-20240725123037.png"
-  :actions='[
-    {
-      text: "加入二哥编程星球",
-      link:"https://laigeoffer.cn/zsxq/",
-    },
-    {
-      text: "了解 PmHub 付费教程",
-      link: "https://laigeoffer.cn/pmhub/learn/",
-      type: "default",
-    },
-  ]'
-/>
+<PaidContentBanner />
 

@@ -11,6 +11,6 @@ pnpm docs:build
 
 git add -A
 git commit -m "update sth"
-git push origin master
+git push origin main
 
 
