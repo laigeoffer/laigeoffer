@@ -2,6 +2,11 @@
 title: PmHub有原型设计吗？
 shortTitle: PmHub有原型设计吗？
 date: 2024-05-21 06:35:38
+description: 二哥的 PmHub 在上线之前经历了多次的原型设计，本文主要介绍了原型设计的工具和在线查看地址。
+head:
+  - - meta
+    - name: keywords
+      content: PmHub,pmhub,二哥的pmhub,原型设计,原型设计工具,Axure,在线预览
 categories: 
   - PmHub
   - 项目介绍

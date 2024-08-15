@@ -1,7 +1,11 @@
 ---
-title: PmHub 是什么？一个牛逼的微服务AI项目管理系统
-shortTitle: 什么是PmHub？
-discription: PmHub 是一套基于 SpringCloud Alibaba & LLM 的智能项目管理系统，该项目旨在帮助小伙伴们快速掌握微服务/分布式项目的架构设计和开发流程。如果你想在校招或者社招中拿到一个满意的 offer，PmHub 将是一个非常 nice 的选择😄。
+title: 二哥的 PmHub 是什么？一个二哥编程星球里的原创微服务AI项目管理系统
+shortTitle: PmHub 是什么？
+description: 二哥的 PmHub 是一套基于 SpringCloud Alibaba & LLM 的智能项目管理系统，该项目旨在帮助小伙伴们快速掌握微服务/分布式项目的架构设计和开发流程。如果你想在校招或者社招中拿到一个满意的 offer，PmHub 将是一个非常 nice 的选择😄。
+head:
+  - - meta
+    - name: keywords
+      content: PmHub,pmhub,二哥的pmhub,Spring Cloud,微服务,分布式,AI,项目管理,项目管理系统
 tags: 
   - pmhub
   - 微服务
@@ -13,7 +17,7 @@ categories:
   - 项目介绍
 ---
 
-::: tip 友情提示
+::: info 友情提示
 
 1、**欢迎蹂躏我们的项目**：[在线访问地址](https://pmhub.laigeoffer.cn/)，记得轻点哦。
 

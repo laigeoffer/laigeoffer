@@ -10,7 +10,7 @@ description: PmHub 是二哥联合苍何推出的一个微服务实战项目，�
 head:
   - - meta
     - name: keywords
-      content: PmHub,Spring  Cloud,微服务,AI,知识星球,沉默王二,二哥的Java进阶之路,二哥的编程星球,Java进阶之路,编程,Java,IT,计算机专业,付费专栏,实战项目,分布式
+      content: PmHub,Spring Cloud,微服务,AI,知识星球,沉默王二,二哥的编程星球,付费专栏,实战项目,分布式,教程
 ---
 
 大家好，二哥呀。很高兴给大家宣布一个好消息，我们的新项目——**PmHub** 正式上线啦！

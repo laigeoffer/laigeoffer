@@ -1,13 +1,17 @@
 ---
 title: 🌟将PmHub写到简历上，面试多了 10 个！
-shortTitle: 如何将PmHub写入简历？
+shortTitle: 如何将PmHub写到简历上？
 categories: 
   - PmHub
   - 项目教程
 author: 
   name: 苍何
   link: https://github.com/freestylefly
-discription: 如何将 PmHub 这个微服务智能项目系统写到简历上？这是很多开源项目并没有提供的服务，导致你可能学了几个月，最后简历上还是写不出来，而我们会手把手教你写！
+description: 如何将 PmHub 这个微服务智能项目管理系统写到简历上？狠狠地捞面试，拿 offer？这是很多开源项目并没有提供的服务，导致你可能学了几个月，最后简历上还是写不出来，而我们会手把手教你写！校招社招冲微服务项目的小伙伴有福了。
+head:
+  - - meta
+    - name: keywords
+      content: PmHub,简历,面试,项目经历,微服务,分布式,项目管理,项目管理系统,秋招,校招,社招,offer
 ---
 
 你好，欢迎来到《如何将 PmHub 写入简历》篇！

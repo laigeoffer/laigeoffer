@@ -32,7 +32,7 @@ export default defineUserConfig({
       {
         name: "keywords",
         content:
-          "Java, pmhub,沉默王二,微服务,数据库, MySQL, Spring, Redis, MyBatis, SpringBoot, RocketMQ, Docker, Jenkins, Spring Security, Nacos,Skywalking,Sentinel,Seata,SpringCloud",
+          "来个offer,offer,Java,pmhub,PmHub,苍何,沉默王二,微服务,数据库, MySQL, Spring, Redis, MyBatis, SpringBoot, RocketMQ, Docker, Jenkins, Spring Security, Nacos,Skywalking,Sentinel,Seata,SpringCloud",
       },
     ],
     [

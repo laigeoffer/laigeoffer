@@ -9,13 +9,13 @@ heroImageStyle: {
 }
 tagline: 二哥编程星球实战项目聚集地，联手苍何，帮助渴望进步的小伙伴拿到一个更好的 offer 💪🏻，目前已推出微服务实战项目 PmHub 和前后端分离项目技术派。
 actions:
-  - text: 加入学习群
+  - text: 项目教程
     icon: lightbulb
-    link: ./zsxq/
+    link: ./pmhub/learn
     type: primary
 
-  - text: 项目教程
-    link: ./pmhub/learn
+  - text: 加入学习群
+    link: ./zsxq/
 
 features:
   - title: 热门技术

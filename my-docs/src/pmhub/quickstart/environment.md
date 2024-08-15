@@ -1,30 +1,18 @@
 ---
 title: PmHub 的前置环境准备：MySQL、Redis、RocketMQ、Nacos
 shortTitle: PmHub 的前置环境准备
+description: PmHub 的前置环境准备，包括 MySQL、Redis、RocketMQ、Nacos 等。
+head:
+  - - meta
+    - name: keywords
+      content: PmHub,pmhub,二哥的pmhub,MySQL,Redis,RocketMQ,Nacos,环境准备
 categories: 
   - PmHub
   - 快速开始
 author: 
   name: 苍何
   link: https://github.com/freestylefly
-requiresAuth: false
 ---
-
-::: tip 🚀 如何把PmHub项目“吃透”？
-
-嗨嗨嗨，如果你正在为项目经历发愁，简历上只能写一些烂大街的项目，甚至连写什么都不知道，投出去的简历石沉大海，面试机会寥寥无几，那么请毫不犹豫地加入[来个 offer 编程星球](https://laigeoffer.cn/zsxq/)。我们将为你解决燃眉之急：
-
-1、**<span style="color:red;">付费文档</span>**：微服务实战项目[PmHub](https://laigeoffer.cn/learn/)、前后端分离项目[技术派](https://javabetter.cn/zhishixingqiu/paicoding.html)等高质量项目的付费文档，超 60 万字，注意是一次付费享受永久查看权限哦😯。
-
-2、**<span style="color:red;">面试指南</span>**：我们还编撰了超 50 万字的[Java面试指南](https://javabetter.cn/zhishixingqiu/mianshi.html)，包含面试准备篇、求职名单篇、面经分享篇、职场修炼篇、技术提升篇、场景设计题篇等，帮你打通求职的任督二脉，真正地吊打“面试官”。
-
-3、**<span style="color:red;">专属问答</span>**：向二哥和苍何发起 1v1 提问，内容不限于 offer 选择、学习路线制定、职业规划、技术疑难杂症解决等。
-
-4、**<span style="color:red;">简历修改</span>**：提供精心的[简历修改服务](https://javabetter.cn/zhishixingqiu/jianli.html)（已修改超 3000 份），附赠星球 500 份优质简历模板，为你打造一份投了就有笔试或者面试的高分简历。
-
-5、**<span style="color:red;">学习环境</span>**：打造一个沉浸式的学习环境，营造一种高考冲刺、大学考研的氛围，对秋招、春招、社招的同学格外有用！
-
-:::
 
 ## 模块划分
 
