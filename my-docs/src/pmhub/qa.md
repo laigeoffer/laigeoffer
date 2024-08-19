@@ -52,4 +52,12 @@ A：我觉得很有必要，尤其是那些想要跳槽拿到更大 offer 的小
 
 A：很多小伙伴群里反馈 mq 启动问题，因为 rocketmq 自身原因比较复杂，启动和配置是需要花费一些时间的，教程中的又 mac 和 windows 以及小伙伴贴出的教程，但是不要担心，默认我已经把 mq 依赖关闭，现在可以放心的先启动啦。
 
+## Q：为什么我的配置文件打开全是乱码呢？
+
+![PmHub IDEA 打开后，配置文件 application.properties 乱码](https://cdn.tobebetterjavaer.com/stutymore/qa-20240819184637.png)
+
+A：找到 setting ➡️ file encodings，然后找到 default encoding for properties files：修改为 UTF-8，之前如果是 ISO-8859-1 的话，调整一下。
+
+![IDEA 调整 properties 的编码](https://cdn.tobebetterjavaer.com/stutymore/qa-20240819184711.png)
+
 <PaidContentBanner />
