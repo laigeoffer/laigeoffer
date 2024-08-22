@@ -9,12 +9,7 @@ author:
   link: https://github.com/laigeoffer
 ---
 
-本地电脑上项目运行环境依赖组件以及版本信息如下：
-
-* IntelliJ IDEA 尽量在 2019 以上版本，2021 版本及以上最好
-* Git 代码版本管理工具
-* JDK8+
-* Maven（如果 IntelliJ IDEA 2021 版本及以上，内置了 Maven 组件）
+PmHub 的[前置环境](https://laigeoffer.cn/pmhub/quickstart/environment.html)安装完成后，就可以在本地启动 PmHub 的后端服务了。
 
 添加苍何微信备注：pmhub，邀请你加入项目沟通群，和 3000+ 志同道合的程序员交流讨论。
 

@@ -14,7 +14,11 @@ author:
   link: https://github.com/freestylefly
 ---
 
-先来看一下 PmHub 的模块划分：
+在本地启动 PmHub 的后端服务和前端服务之前，需要先在本地安装好 MySQL、Redis 和 Nacos。
+
+当然 [JDK](https://javabetter.cn/overview/jdk-install-config.html)、[Maven](https://javabetter.cn/maven/maven.html)、[IDEA](https://javabetter.cn/overview/IDEA-install-config.html) 就属于更基础的前置条件了，这里就不再赘述。
+
+好，来看一下 PmHub 的模块划分：
 
 ```
 com.laigeoffer.pmhub     
@@ -56,7 +60,7 @@ com.laigeoffer.pmhub
 | 11 | Java                | 开发版本      | 1.8        | [https://www.oracle.com/java/technologies](https://www.oracle.com/java/technologies)    |
 | 12 | MySQL              | 数据库       | 8.0        | [https://www.mysql.com](https://www.mysql.com)  |
 
-好，接下来我们来看一下 PmHub 的前置环境该如何安装，重点说一说 MySQL、Redis、RocketMQ 和 Nacos。
+接下来我们来看一下 PmHub 的前置环境该如何安装，重点说一说 MySQL、Redis、Nacos 和 RocketMQ。
 
 其中 MySQL、Redis 和 Nacos 是必须要先启动的，RocketMQ 是可选的。
 
@@ -315,59 +319,87 @@ nacos.core.auth.caching.enabled=true
 
 ## RocketMQ 准备
 
-安装 NameServer。
+::: tip
+之前的 PmHub 版本中，RocketMQ 是必须先启动的前置条件，但后面一些球友反馈 RocketMQ 在启动的时候遇到很多问题，尤其是 RocketMQ 5.x 版本中又新增了 很多新的东西，比如说 proxy。
+
+所以最新的 PmHub 版本中，我把 RocketMQ 改为非必须启动项目了，最大程度减轻大家上手微服务实战项目的难度。
+:::
+
+RocketMQ 是阿里开源的一个消息中间件，具有高性能、高可靠、高实时、分布式的特点，底层是用 Java 语言开发的。2016 年成为 Apache 的顶级开源项目，在阿里内部也经历了多年双十一的拷打，主打一个能抗能打。
+
+- 官网地址：[https://rocketmq.apache.org/](https://rocketmq.apache.org/)
+- 开源地址：[https://github.com/apache/rocketmq](https://github.com/apache/rocketmq)
+
+在 PmHub 中，我们就会使用 RocketMQ 进行任务下发，项目经理新建任务并设置好开始时间和执行人，到了指定时间，RocketMQ 就将消息发送给任务执行人。
+
+![PmHub 新建任务通过 RocketMQ 定时下发](https://cdn.tobebetterjavaer.com/stutymore/environment-20240821141606.png)
+
+### 二进制包安装
+
+第一步，下载二进制包（已经编译完成可以直接运行的）：[https://rocketmq.apache.org/zh/docs/quickStart/01quickstart](https://rocketmq.apache.org/zh/docs/quickStart/01quickstart)，并解压：
+
+![二哥的 PmHub：下载 RocketMQ](https://cdn.tobebetterjavaer.com/stutymore/environment-20240821143354.png)
+
+第二步，启动 NameServer。NameServer 是 RocketMQ 的核心组件之一，负责管理 Topic 和 Broker 的路由信息。
 
 ```bash
-docker run -d -p 9876:9876 --name rmqnamesrv foxiswho/rocketmq:server-4.5.1
+nohup sh bin/mqnamesrv &
 ```
 
-安装 Brocker。
+可以通过 `ps -ef | grep mqnamesrv` 查看是否启动成功。
 
-1）新建配置目录。
+![二哥的 PmHub：mqnamesrv 是否启动](https://cdn.tobebetterjavaer.com/stutymore/environment-20240821144034.png)
+
+也可以通过查看日志文件 `tail nohup.out` 查看是否启动成功。
+
+![二哥的 PmHub：nohup.out](https://cdn.tobebetterjavaer.com/stutymore/environment-20240821144437.png)
+
+第三步，启动 Broker+Proxy。Broker 负责存储和转发消息，是 RocketMQ 中的另一个重要组件。Proxy 是用于支持新协议（如 gRPC）的扩展功能，以便与其他系统（例如 Apache Pulsar、Kafka 等）进行集成。
 
 ```bash
-mkdir -p ${HOME}/docker/software/rocketmq/conf
+nohup sh bin/mqbroker -n localhost:9876 --enable-proxy &
 ```
 
-2）新建配置文件 broker.conf。
+同样可以通过 `tail -f nohup.out` 查看是否启动成功。
 
-```bash
-brokerClusterName = DefaultCluster
-brokerName = broker-a
-brokerId = 0
-deleteWhen = 04
-fileReservedTime = 48
-brokerRole = ASYNC_MASTER
-flushDiskType = ASYNC_FLUSH
-# 此处为本地ip, 如果部署服务器, 需要填写服务器外网ip
-brokerIP1 = xx.xx.xx.xx
-```
+![二哥的 PmHub：启动 Broker+Proxy](https://cdn.tobebetterjavaer.com/stutymore/environment-20240821145224.png)
 
-3）创建容器。
+`tail -f ~/logs/rocketmqlogs/proxy.log` 也可以查看 Proxy 的日志。
 
-```bash
-docker run -d \
--p 10911:10911 \
--p 10909:10909 \
---name rmqbroker \
---link rmqnamesrv:namesrv \
--v ${HOME}/docker/software/rocketmq/conf/broker.conf:/etc/rocketmq/broker.conf \
--e "NAMESRV_ADDR=namesrv:9876" \
--e "JAVA_OPTS=-Duser.home=/opt" \
--e "JAVA_OPT_EXT=-server -Xms512m -Xmx512m" \
-foxiswho/rocketmq:broker-4.5.1
-```
+![二哥的 PmHub：查看 Proxy 日志](https://cdn.tobebetterjavaer.com/stutymore/environment-20240821145327.png)
 
-安装 RocketMQ 控制台。
+这段日志的大体含义，我简单解释下，这样大家会对 RocketMQ 的启动过程有一个大致的了解：
 
-```bash
-docker pull pangliang/rocketmq-console-ng
-docker run -d \
---link rmqnamesrv:namesrv \
--e "JAVA_OPTS=-Drocketmq.config.namesrvAddr=namesrv:9876 -Drocketmq.config.isVIPChannel=false" \
---name rmqconsole \
--p 8088:8080 \
--t pangliang/rocketmq-console-ng
-```
+①、`grpc server has built. port: 8081`
 
-运行成功，稍等几秒启动时间，浏览器输入 localhost:8088 查看控制台。
+这条日志表明 gRPC 服务器已成功构建，监听的端口是 8081。日志中的 tlsKeyPath 和 tlsCertPath 是 TLS（传输层安全性）的相关配置，表示 TLS 密钥和证书路径。threadPool 是 gRPC 服务器使用的线程池大小。
+
+②、`Server is running in TLS permissive mode`
+
+这条日志表示服务器正在以 TLS 宽松模式运行。宽松模式通常意味着服务器接受未加密和加密的连接请求。
+
+③、`Using OpenSSL provider`
+
+表示 gRPC 服务器使用的是 OpenSSL 作为其加密提供程序，OpenSSL 是一种常见的加密库，用于处理 SSL/TLS 协议。
+
+④、`The broker[broker-a, 192.168.31.31:10911] boot success. serializeType=JSON and name server is localhost:9876`
+
+这表示 RocketMQ 的 Broker 实例（标识为 broker-a，地址为 `192.168.31.31:10911`）已成功启动。Broker 使用 JSON 作为序列化方式，并且与 `NameServer localhost:9876` 连接成功。
+
+⑤、`user specified name server address: localhost:9876`
+
+表示用户明确指定了 NameServer 的地址为 localhost:9876。
+
+⑥、`ocketmq-proxy startup successfully`
+
+表示 RocketMQ 的 Proxy 组件已成功启动，代理服务现在已经可以正常工作。
+
+至此，一个单节点副本的 RocketMQ 集群已经部署起来了。
+
+## 小结
+
+搭建环境对于初学者来说，其实是最难的，因为总会发生很多莫名其妙的问题，大家在遇到问题的时候也不要惊慌，可以在我们的 PmHub 交流群里提问，我的微信是 itwangersb
+
+你也可以加入我们的知识星球，以获取 PmHub 更多的教程和帮助。
+
+<PaidContentBanner />

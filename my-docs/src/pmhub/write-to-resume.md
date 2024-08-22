@@ -42,15 +42,16 @@ head:
 
 先来看专业技能的撰写建议：
 
-1、熟悉 Java 特性，如集合类、自定义注解、异常处理
-2、熟悉计算机网络基础知识，如 OSI 七层模型，了解 TCP/IP、HTTP 协议
-3、熟悉 synchronized、线程池、TransmittableThreadLocal 等实现原理
-4、熟练掌握 MySQL，深刻理解事务 ACID 特性、索引、MVCC、以及日志等
-5、熟练 Redis 的使用，对其持久化机制、内存淘汰策略有较深理解
-6、熟悉 Rocketmq 消息队列，有过手动消息确认、应用解耦、消息消费的实战
-7、熟悉 Docker 及 Docker Compose，并能独立部署上线
-8、熟练掌握 JVM 内存机构、常见 GC 算法、双亲委派机制、类加载机制等
-9、熟悉微服务架构，对主流技术栈如 SpringCloud、SpringCloud Alibaba 了解，有独立搭建微服务系统以及单体项目微服务化实战经验。
+- 具备扎实的计算机基础知识，熟悉常用的数据结构与算法（如数组、链表、二叉树，以及动态规划、回溯、递归等），理解计算机网络的核心协议，如 IP、UDP、TCP、HTTPS 等。
+- 熟悉 Java 编程语言，掌握面向对象的编程思想，能够使用常见设计模式（如单例、工厂、策略等）并运用于实际项目中。
+- 掌握 Java 并发编程，常用并发容器、线程池、锁机制以及并发工具（如 volatile、synchronized 等），了解 HashMap、CopyOnWriteArrayList 等容器的源码。
+- 熟练使用 MySQL，能够进行 SQL 优化，深入理解锁机制、存储引擎、MVCC、索引等。
+- 熟悉 Redis 的数据结构和缓存机制，掌握持久化原理（如 AOF、RDB），能够有效解决缓存穿透、缓存击穿、缓存雪崩等问题。
+- 掌握 Spring Boot、Spring、MyBatis-Plus 等主流开发框架，理解 Spring Boot 自动装配、IOC 和 AOP 的原理。
+- 熟悉 RabbitMQ 消息队列中间件，了解消息可靠性、死信队列、延迟队列等机制，能够设计并实现稳定的异步通信方案。
+- 深入理解 JVM 底层原理，包括 JVM 内存模型、垃圾回收机制、GC 算法以及类加载机制。
+- 熟悉 Linux 操作系统，了解 Docker 的基本使用和容器化部署，掌握 Dockerfile 的编写以及网络和存储的实现方案。
+- 熟练使用 Git、Maven 等项目管理及构建工具。
 
 星球里还提供了大量专业技能的写法可供参考，我把我修改过的，觉得非常不错的简历都放到星球这个【[精选简历](https://t.zsxq.com/07eet6DJ1)】的帖子里了，需要的可以[戳链接](https://t.zsxq.com/07eet6DJ1)直达。
 
@@ -129,12 +130,17 @@ GitHub 代码地址：[https://github.com/laigeoffer/pmhub](https://github.com/l
 - 采用 Cache Aside 模式，确保数据库更新后及时失效相关缓存，保证数据库与缓存的数据一致性。
 - 基于 TransmittableThreadLocal (TTL) 自定义请求头拦截器，将 Header 数据封装到线程变量中，减少了约 40% 的用户信息数据库查询次数，并自动刷新用户有效期。
 - 使用 Docker Compose 搭建项目环境，简化项目的部署过程，减少环境差异性问题，提升资源隔离的安全性。
+- 使用 Nacos 作为服务注册中心，并将配置信息持久化到 MySQL 中，以避免每次 Nacos 重启后配置信息丢失。
 
 ### PmHub的简历模板
 
 目前已经有球友把 PmHub 写到简历上，你可以参考一下。
 
-![](https://cdn.tobebetterjavaer.com/stutymore/write-to-resume-20240809172704.png)
+![PmHub 如何写到简历上1](https://cdn.tobebetterjavaer.com/stutymore/write-to-resume-20240809172704.png)
+
+![PmHub 如何写到简历上2](https://cdn.tobebetterjavaer.com/stutymore/write-to-resume-20240821115138.png)
+
+![PmHub 如何写到简历上3](https://cdn.tobebetterjavaer.com/stutymore/write-to-resume-20240821115249.png)
 
 ## 个人评价
 
