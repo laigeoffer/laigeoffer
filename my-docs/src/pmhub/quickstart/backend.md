@@ -1,5 +1,5 @@
 ---
-title: 如何在本地运行PmHub后端代码？
+title: 如何在本地运行微服务实战项目PmHub的后端代码？
 shortTitle: 启动PmHub后端
 categories: 
   - PmHub
@@ -11,36 +11,11 @@ author:
 
 PmHub 的[前置环境](https://laigeoffer.cn/pmhub/quickstart/environment.html)安装完成后，就可以在本地启动 PmHub 的后端服务了。
 
-添加苍何微信备注：pmhub，邀请你加入项目沟通群，和 3000+ 志同道合的程序员交流讨论。
-
-![苍何微信](https://cdn.tobebetterjavaer.com/stutymore/%E6%A0%87%E5%87%86.png)
-
-
-## 项目部署
-
-### 环境准备
-
-|    | 技术                | 名称               | 版本       | 官网                                                                                               |
-|----|---------------------|------------------|------------|----------------------------------------------------------------------------------------------------|
-| 1  | Spring Boot         | 基础框架           | 2.7.18     | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                   |
-| 2  | SpringCloud         | 微服务框架         | 2021.0.8   | [https://spring.io/projects/spring-cloud](https://spring.io/projects/spring-cloud)                 |
-| 3  | SpringCloud Alibaba | 阿里微服务框架     | 2021.0.5.0 | [https://github.com/alibaba/spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba) |
-| 4  | SpringCloud Gateway | 服务网关           | 3.1.8      | [https://spring.io/projects/spring-cloud-gateway](https://spring.io/projects/spring-cloud-gateway) |
-| 5  | MyBatis-Plus        | 持久层框架         | 3.5.1      | [https://baomidou.com](https://baomidou.com)                                                       |
-| 6  | Redis               | 分布式缓存数据库   | Latest     | [https://redis.io](https://redis.io)                                                               |
-| 7  | RocketMQ            | 消息队列           | 2.2.3      | [https://rocketmq.apache.org](https://rocketmq.apache.org)                                         |
-| 8  | HuTool              | 小而全的工具集项目 | 5.8.11     | [https://hutool.cn](https://hutool.cn)                                                             |
-| 9  | Maven               | 项目构建管理       | 3.9.1      | [http://maven.apache.org](http://maven.apache.org)                                                 |
-| 10 | Sentinel            | 流控防护框架       | 1.8.6      | [https://github.com/alibaba/Sentinel](https://github.com/alibaba/Sentinel)                         |
-| 11 | Java                | 开发版本           | 1.8        | [https://www.oracle.com/java/technologies](https://www.oracle.com/java/technologies)               |
-
-### 后端项目启动
-
 真手把手教大家哦，不要怕，跟着我一步一步来就可以了。
 
-#### 第一步，下载 pmhub 项目源码
+## 第一步，下载 pmhub 项目源码
 
-①、使用 Git 命令
+### ①、使用 Git 命令
 
 网络比较通畅的小伙伴可以直接从 GitHub 上拉取，命令如下：
 
@@ -54,7 +29,7 @@ git clone git@github.com:laigeoffer/pmhub.git
 git clone https://gitee.com/laigeoffer/pmhub.git
 ```
 
-②、直接下载压缩包
+### ②、直接下载压缩包
 
 也可以直接下载 GitHub 上的压缩包，然后解压到本地。
 
@@ -63,113 +38,63 @@ git clone https://gitee.com/laigeoffer/pmhub.git
 
 ![下载项目源码压缩包](https://cdn.tobebetterjavaer.com/images/20240324/76023993f091417a800ec7da19989e88.png)
 
-③、直接通过 GitHub 桌面版
+### ③、直接通过 GitHub 桌面版
 
 我个人一直比较喜欢使用 GitHub 桌面版来管理仓库，图形化界面操作起来也比较舒服。
 
 ![GitHub 桌面版操作仓库](https://cdn.tobebetterjavaer.com/images/20240324/27136b6558d84edb861461ca5452021d.png)
 
-#### 第二步，使用 Intellij IDEA 导入项目
+## 第二步，使用 Intellij IDEA 导入项目
 
-这一步应该就不需要我多讲了，相信大家都能搞定。
+导入后的目录结构如下所示：
 
-![idea 导入项目](https://cdn.tobebetterjavaer.com/images/20240324/62ee1affa2fd46ed89eaaa2d6931198b.png)
+![PmHub 的目录结构图](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822135628.png)
 
-#### 第三步，导入数据库
+## 第三步，启动 PmHub 的各个微服务
 
-推荐大家使用 [Navicat](https://javabetter.cn/nice-article/itmind/navicatmacyjpx.html) 这款图形化数据库管理工具。
+### ①、启动 pmhub-gateway 网关服务
 
-①、创建数据库 laigeoffer-pmhub
+注意启动前需要先修改 Nacos 的用户名和密码，路径如下图所示，把 discovery 和 config 下的两处 username 和 password 修改为你本地 Nacos 服务的默认用户名和密码，我的都是 nacos 
 
-> 也可以是其他名字，只要在配置文件里修改对应的数据库名即可。
+![二哥的 pmhub：修改 Nacos 的用户名和密码](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822135708.png)
 
-![数据库文件](https://cdn.tobebetterjavaer.com/images/20240324/83b5e36a95e04e3d951641215ff16dcf.png)
+修改完成后，打开 PmHubGatewayApplication，然后运行它，如果没有报错的话，会在控制台看到类似下面的信息。
 
-②、导入数据库文件，路径在 pmhub/sql/pmhub_20240305.sql 和 pmhub/sql/pmhub_nacos_20240423.sql（如果数据库文件改了，这里没同步，你找到最新日期的就对了）
+![pmhub-gateway启动成功](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822135755.png)
 
-![注意文件路径](https://cdn.tobebetterjavaer.com/images/20240324/327783d299814ff8837ab5c3c64b3ff5.png)
+### ②、启动 pmhub-auth 认证服务
 
-可以直接右键在 terminal 终端中打开，然后通过 pwd 和 ls 命令查看文件的绝对路径。
+也是先修改 Nacos 的用户名和密码。然后运行 PmHubAuthApplication。
 
-![在 idea 中查看文件路径](https://cdn.tobebetterjavaer.com/images/20240324/24f0cbafe1fb4995827015c294196eb2.png)
+### ③、启动 pmhub-system 系统服务
 
-拿到绝对路径后，就可以在 Navicat 中导入数据库文件了。
+也是先修改 Nacos 的用户名和密码。
 
-![在 navicat 中导入数据库文件](https://cdn.tobebetterjavaer.com/images/20240324/aa4cb8f705aa4f46a7d4835c9d26a596.png)
+![pmhub-system中 Nacos 的用户名和密码修改](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822140138.png)
 
-导入完成后，刷新一下就可以看到最新的数据库表了。
+然后还需要在 Nacos 后台服务中修改 pmhub-system-dev.yml 配置文件中的 MySQL 连接信息。
 
-#### 第四步，基础环境准备
+Nacos 后台服务地址：[http://localhost:8848/nacos/](http://localhost:8848/nacos/)
 
-①、启动 Redis
+点击【编辑】：
 
-如果你是 macOS 用户，可以直接在终端输入`redis-server`启动 Redis。
+![](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822140405.png)
 
-![启动 Redis](https://cdn.tobebetterjavaer.com/images/README/1711692102829.png)
+修改 MySQL 的用户名和密码：
 
-如果你是 Windows 用户，可以直接双击 redis-server.exe 启动 Redis（我没有 Windows，没法截图啦）。
+![](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822140450.png)
 
-当然也可以直接通过 Docker 启动 Redis。
+然后确认发布。
 
-```shell
-# 拉取 Redis 镜像:
-docker pull redis
-# 启动 Redis 容器:
-docker run --name my-redis -d redis
-```
+之后在 pmhub-system 项目（在 pmhub-modules 下），右键 `Run PmHubSystemApplication.main()`。
 
-②、启动 MySQL
+![运行PmHubSystemApplication](https://cdn.tobebetterjavaer.com/stutymore/backend-20240822140620.png)
 
-可以选择本机直接安装 MySQL，也可以通过 Docker 的方式，但需要做好磁盘挂载，推荐本机安装，然后设置开机启动。
+### ④、启动 pmhub-project 项目管理服务
 
-③、启动 Nacos
+重复 pmhub-system 的步骤，还是先修改 Nacos 的用户名和密码，然后修改 pmhub-project-dev.yml 配置文件中的 MySQL 连接信息。
 
-去[官网](https://nacos.io/download/nacos-server/)下载 Nacos。然后找到 `/conf/application.properties` 文件，修改数据库连接信息，参考 `pmhub/docker/nacos/conf/application.properties` 中的内容进行修改。
-
-```
-1. 如果数据库名也是 pmhub-nacos，那么只需要修改用户名和密码即可。
-2. 如果用户名也是 root，那么只需要修改密码即可。
-3. 如果密码也一样，那么就不需要修改了（不可能，绝对不可能这么巧😂）。
-```
-
-配置信息需要修改的地方看下图，本地启动可以把鉴权关了。
-
-![修改nacos配置文件](https://cdn.tobebetterjavaer.com/stutymore/20240529173446.png)
-
-①、如果你是 macOS 用户，可以直接在终端输入`sh startup.sh -m standalone`启动 Nacos。
-
-②、如果你是 Windows 用户，可以直接双击 startup.cmd 启动 Nacos。
-
-启动成功后访问 http://localhost:8848/nacos 即可看到 Nacos 控制台。默认用户名密码都是 nacos。
-
-![nacos启动成功界面](https://cdn.tobebetterjavaer.com/stutymore/20240529173621.png)
-
-#### 第五步，启动各个微服务
-
-> 注意：如果遇到服务启动失败，可自行查看 nacos 配置是否做了修改，如数据库连接信息等。
-
-①、启动 pmhub-gateway 网关服务
-
-找到 pmhub-gateway 项目，右键 Run PmHubGatewayApplication.main()。
-
-![pmhub-gateway启动成功](https://cdn.tobebetterjavaer.com/stutymore/20240529174025.png)
-
-②、启动 pmhub-auth 认证服务
-
-找到 pmhub-auth 项目，右键 Run PmHubAuthApplication.main()。
-
-③、启动 pmhub-system 系统服务
-
-找到 pmhub-system 项目（在 pmhub-modules 下），右键 Run PmHubSystemApplication.main()。
-pmhub-system 启动前需要修改 nacos 中的 pmhub-system-dev.yml 配置文件，修改数据库连接信息为你自己的数据库。
-
-![修改pmhub-system配置](https://cdn.tobebetterjavaer.com/stutymore/backend-20240807094825.png)
-
-④、启动 pmhub-project 项目管理服务
-
-找到 pmhub-project 项目（在 pmhub-modules 下），右键 Run PmHubProjectApplication.main()。
-
-启动前需要修改 nacos 中的 pmhub-project-dev.yml 配置文件，修改数据库连接信息为你自己的数据库。
+再在 pmhub-project 项目（在 pmhub-modules 下），右键 `Run PmHubProjectApplication.main()`。
 
 ⑤、启动 pmhub-workflow 流程管理服务
 
