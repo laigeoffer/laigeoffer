@@ -5,7 +5,7 @@ categories:
   - PmHub
   - 快速开始
 author: 
-  name: 苍何
+  name: 苍何&沉默王二
   link: https://github.com/laigeoffer
 ---
 
@@ -94,54 +94,58 @@ Nacos 后台服务地址：[http://localhost:8848/nacos/](http://localhost:8848/
 
 重复 pmhub-system 的步骤，还是先修改 Nacos 的用户名和密码，然后修改 pmhub-project-dev.yml 配置文件中的 MySQL 连接信息。
 
+另外，由于 project 涉及到 Seata，Seata 中有用到 Nacos，所以还需要在 pmhub-project-dev.yml 配置文件中添加 username 和 password。否则会在启动该付服务的时候报 user not found 的错误。
+
+虽然必须的前置条件中并没有 Seata，但是项目中确实有用到。
+
+![二哥的 PmHub：修改 Seata 中 Nacos 的用户名和密码](https://cdn.tobebetterjavaer.com/stutymore/backend-20240830170304.png)
+
 再在 pmhub-project 项目（在 pmhub-modules 下），右键 `Run PmHubProjectApplication.main()`。
 
-⑤、启动 pmhub-workflow 流程管理服务
+![二哥的 PmHub：启动pmhub-project 服务](https://cdn.tobebetterjavaer.com/stutymore/backend-20240830170634.png)
 
-找到 pmhub-workflow 项目（在 pmhub-modules 下），右键 Run PmHubWorkflowApplication.main()。
+### ⑤、启动 pmhub-workflow 流程管理服务
 
-启动前需要修改 nacos 中的 pmhub-workflow-dev.yml 配置文件，修改数据库连接信息为你自己的数据库。
+重复 pmhub-project 的步骤，还是先修改 Nacos 的用户名和密码，然后修改 pmhub-workflow-dev.yml 配置文件中的 MySQL 连接信息。
 
-⑥、启动 pmhub-gen 代码生成服务
+再在 pmhub-workflow 项目（在 pmhub-modules 下），右键 `Run PmHubWorkflowApplication.main()`。
 
-找到 pmhub-gen 项目（在 pmhub-modules 下），右键 Run PmHubGenApplication.main()。
+![pmhub-workflow 服务启动](https://cdn.tobebetterjavaer.com/stutymore/backend-20240823174433.png)
 
-启动前需要修改 nacos 中的 pmhub-gen-dev.yml 配置文件，修改数据库连接信息为你自己的数据库。
+### ⑥、启动 pmhub-gen 代码生成服务
 
-⑦、启动 pmhub-job 定时任务调度服务
+重复 pmhub-workflow 的步骤，还是先修改 Nacos 的用户名和密码，然后修改 pmhub-gen-dev.yml 配置文件中的 MySQL 连接信息。
 
-找到 pmhub-job 项目（在 pmhub-modules 下），右键 Run PmHubJobApplication.main()。
+再在 pmhub-gen 项目（在 pmhub-modules 下），右键 `Run PmHubGenApplication.main()`。
 
-启动前需要修改 nacos 中的 pmhub-job-dev.yml 配置文件，修改数据库连接信息为你自己的数据库。
+![pmhub-gen 启动](https://cdn.tobebetterjavaer.com/stutymore/backend-20240823175129.png)
 
-⑧、启动 pmhub-monitor 监控服务
+### ⑦、启动 pmhub-job 定时任务调度服务
 
-找到 pmhub-monitor 项目，右键 Run PmHubMonitorApplication.main()。
+重复 pmhub-gen 的步骤，还是先修改 Nacos 的链接信息、用户名和密码，然后修改 pmhub-job-dev.yml 配置文件中的 MySQL 连接信息。
 
-启动前需要修改 nacos 中的 pmhub-monitor-dev.yml 配置文件，修改监控后台的用户名和密码，以及首页展示标题。
+![二哥的 PmHub：修改pmhub-job-dev.yml](https://cdn.tobebetterjavaer.com/stutymore/backend-20240830172428.png)
 
-启动成功后可访问：http://localhost:6888/wallboard
+再在 pmhub-job 项目（在 pmhub-modules 下），右键 `Run PmHubJobApplication.main()`。
 
-可以在线实时查案各个服务的状态以及日志：
+### ⑧、启动 pmhub-monitor 监控服务
 
-![主界面](https://cdn.tobebetterjavaer.com/stutymore/image.webp)
+这一步不用去修改 Nacos 服务中的 pmhub-monitor-dev.yml 配置文件了，不过需要记住里面的用户名和密码，随后登录要用的。
+
+![二哥的 PmHub：记住monitor 的登录用户名和密码](https://cdn.tobebetterjavaer.com/stutymore/backend-20240830172641.png)
+
+再在 pmhub-monitor 项目，右键 `Run PmHubMonitorApplication.main()`。
+
+![启动 pmhub-monitor 服务](https://cdn.tobebetterjavaer.com/stutymore/backend-20240830172948.png)
+
+启动成功后可访问：[http://localhost:6888/wallboard](http://localhost:6888/wallboard)
+
+![Spring Boot Admin](https://cdn.tobebetterjavaer.com/stutymore/backend-20240830173110.png)
+
+可以在线实时查案各个服务的状态。
 
 
-### 前端项目启动
-
-请参考 pmhub-ui 项目的 README.md 文档，[前端工程结构说明](https://github.com/laigeoffer/pmhub/blob/master/pmhub-ui/README.md)，或者直接点击进入，[前端快速启动说明](https://laigeoffer.cn/pages/083160/)
-
-### Swagger 地址
-
-http://localhost:1024/dev-api/swagger-ui/index.html
-
-### 服务器部署（Docker 方式）
-
-请参考 [项目手册](https://laigeoffer.cn/)
-
-## 技术选型
-
-后端技术栈
+## 后端技术选型
 
 |        技术         | 说明                                 | 官网                                                                                                                       |
 |:-------------------:|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

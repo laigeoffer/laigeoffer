@@ -45,20 +45,23 @@ com.laigeoffer.pmhub
 
 再来看一下 PmHub 的版本依赖约定：
 
-|    | 技术                  | 名称        | 版本         | 官网        |
-|----|---------------------|-----------|------------|------------------------------------|
-| 1  | Spring Boot         | 基础框架      | 2.7.18     | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot)                   |
-| 2  | SpringCloud         | 微服务框架     | 2021.0.8   | [https://spring.io/projects/spring-cloud](https://spring.io/projects/spring-cloud)                 |
-| 3  | SpringCloud Alibaba | 阿里微服务框架   | 2021.0.5.0 | [https://github.com/alibaba/spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba) |
-| 4  | SpringCloud Gateway | 服务网关      | 3.1.8      | [https://spring.io/projects/spring-cloud-gateway](https://spring.io/projects/spring-cloud-gateway) |
-| 5  | MyBatis-Plus        | 持久层框架     | 3.5.1      | [https://baomidou.com](https://baomidou.com)                                                       |
-| 6  | Redis               | 分布式缓存数据库  | Latest     | [https://redis.io](https://redis.io)                                                               |
-| 7  | RocketMQ            | 消息队列      | 2.2.3      | [https://rocketmq.apache.org](https://rocketmq.apache.org)                                         |
-| 8  | HuTool              | 小而全的工具集项目 | 5.8.11     | [https://hutool.cn](https://hutool.cn)                                                             |
-| 9  | Maven               | 项目构建管理    | 3.9.1      | [http://maven.apache.org](http://maven.apache.org)                                                 |
-| 10 | Sentinel            | 流控防护框架    | 1.8.6      | [https://github.com/alibaba/Sentinel](https://github.com/alibaba/Sentinel)                         |
-| 11 | Java                | 开发版本      | 1.8        | [https://www.oracle.com/java/technologies](https://www.oracle.com/java/technologies)    |
-| 12 | MySQL              | 数据库       | 8.0        | [https://www.mysql.com](https://www.mysql.com)  |
+|    | 技术     | 名称        | 版本         | 官网        |
+|----|-------|-----------|------------|---|
+| 1 | Java                | 开发版本      | 1.8        | [https://www.oracle.com/java/technologies](https://www.oracle.com/java/technologies)    |                                                   
+| 2  | Maven               | 项目构建管理    | 3.9.1      | [http://maven.apache.org](http://maven.apache.org)|
+| 3 | MySQL              | 数据库       | 8.0        | [https://www.mysql.com](https://www.mysql.com)  |                                                   
+| 4  | Redis               | 分布式缓存中间件  | Latest     | [https://redis.io](https://redis.io)      |
+| 5  | Nacos               | 微服务配置中心和注册中心  |  2.3.2     | [https://nacos.io/docs/v2.3/what-is-nacos/](https://nacos.io/docs/v2.3/what-is-nacos/)|
+| 6  | Spring Boot         | 基础框架      | 2.7.18     | [https://spring.io/projects/spring-boot](https://spring.io/projects/spring-boot) | 
+| 7  | SpringCloud         | 微服务框架     | 2021.0.8   | [https://spring.io/projects/spring-cloud](https://spring.io/projects/spring-cloud) |
+| 8  | SpringCloud Alibaba | 阿里微服务框架   | 2021.0.5.0 | [https://github.com/alibaba/spring-cloud-alibaba](https://github.com/alibaba/spring-cloud-alibaba) |
+| 9  | SpringCloud Gateway | 服务网关      | 3.1.8      | [https://spring.io/projects/spring-cloud-gateway](https://spring.io/projects/spring-cloud-gateway) |
+| 10  | MyBatis-Plus        | 持久层框架     | 3.5.1      | [https://baomidou.com](https://baomidou.com)   |
+| 11  | RocketMQ            | 消息队列      | 2.2.3      | [https://rocketmq.apache.org](https://rocketmq.apache.org)    |        
+| 12  | HuTool              | 小而全的工具集项目 | 5.8.11     | [https://hutool.cn](https://hutool.cn)           |
+| 13 | Sentinel            | 流控防护框架    | 1.8.6      | [https://github.com/alibaba/Sentinel](https://github.com/alibaba/Sentinel) |
+| 14 | Docker| 容器|latest| [https://www.docker.com](https://www.docker.com)|
+
 
 接下来我们来看一下 PmHub 的前置环境该如何安装，重点说一说 MySQL、Redis、Nacos 和 RocketMQ。
 
@@ -202,7 +205,7 @@ docker run --name my-redis -d redis
 ![PmHub 的配置信息](https://cdn.tobebetterjavaer.com/stutymore/environment-20240819185338.png)
 :::
 
-可以到[ Nacos 官网](https://nacos.io/download/nacos-server/)下载 Nacos Server，我下载解压后的目录如下所示：
+可以到[ Nacos 官网](https://nacos.io/download/nacos-server/)下载 Nacos Server（建议 2.3.2 版本），我下载解压后的目录如下所示：
 
 ![二哥的 Java 进阶之路：Nacos 解压后](https://cdn.tobebetterjavaer.com/stutymore/environment-20240819185752.png)
 
